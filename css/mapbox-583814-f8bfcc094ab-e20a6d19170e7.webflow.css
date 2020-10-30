@@ -1353,11 +1353,14 @@ blockquote {
 }
 
 .block-quote-2 {
+  width: 400px;
   margin-top: 60px;
   padding-right: 0px;
   font-family: Oswald, sans-serif;
   color: #242424;
-  font-size: 28px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 200;
   text-align: left;
 }
 
@@ -2255,6 +2258,29 @@ blockquote {
 
 .heading-12 {
   padding-left: 80px;
+}
+
+.block-quote-divider {
+  position: relative;
+  margin-top: 10px;
+  padding-right: 0px;
+  border-left-width: 25px;
+  font-family: Oswald, sans-serif;
+  color: #242424;
+  font-size: 18px;
+  text-align: left;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.heading-13 {
+  color: #b4b4b4;
+  text-align: left;
+}
+
+.divider {
+  color: #b4b4b4;
+  text-align: left;
 }
 
 @media screen and (min-width: 1280px) {
