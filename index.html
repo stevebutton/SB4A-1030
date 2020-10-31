@@ -1426,8 +1426,8 @@
                 <img src="images/SoPKey-Takeaways.png" id="show_sop_layer" loading="lazy" alt="">
               </a>
               <a data-w-tab="SoPC" data-w-id="e207b50b-7759-69f0-ec94-10680d8ed5be"
-                class="tab-link-tab-3 w-inline-block w-tab-link"><img src="images/SoPRanking-PPD.png" id="show_ranking_layer" loading="lazy"
-                  alt=""></a>
+                class="tab-link-tab-3 w-inline-block w-tab-link"><img src="images/SoPRanking-PPD.png"
+                  id="show_ranking_layer" loading="lazy" alt=""></a>
             </div>
             <div class="tabs-content w-tab-content">
               <div data-w-tab="SoPA" class="tab-pane-sop-a w-tab-pane">
@@ -1450,8 +1450,8 @@
               </div>
               <div data-w-tab="SoPB" class="w-tab-pane">
                 <div class="ss-wrapper">
-                  <div data-animation="slide" id="SOP_slider" data-hide-arrows="1" data-nav-spacing="10" data-duration="500"
-                    data-infinite="1" class="slider-sop w-slider">
+                  <div data-animation="slide" id="SOP_slider" data-hide-arrows="1" data-nav-spacing="10"
+                    data-duration="500" data-infinite="1" class="slider-sop w-slider">
                     <div class="mask w-slider-mask">
                       <div class="w-slide">
                         <div class="div-block-13">
@@ -1815,11 +1815,17 @@
   <script>
     // MAP PART
 
-
-    $(document).on("click", "#show_ranking_layer", function () {
-      map.setPaintProperty('sop-sb4a-eud', 'fill-opacity', 1);
-      pulsationMarkersVisibility(true);
+    var Webflow = Webflow || [];
+    Webflow.push(function () {
+      $(document).on('slider-event', '#SOP_slider', function (e, data) {
+        console.log('SLIDER EVENT');
+        const index = $("#SOP_slider").find(".w-slider-dot.w-active").index();
+        if (index === 1) {
+          map.setPaintProperty('sop-sb4a-eud', 'fill-opacity', 1);
+        }
+      });
     });
+
 
     $(document).on("click", "#show_ranking_layer", function () {
       map.setPaintProperty('sop-sb4a-quality', 'fill-opacity', 1);
@@ -1842,6 +1848,7 @@
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <script src="js/radarChart.js" type="text/javascript"></script>
   <script src="js/map.js" type="text/javascript"></script>
+  <script src="js/webflow.events.slider.js" type="text/javascript"></script>
 
 
 </body>
