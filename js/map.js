@@ -12,7 +12,7 @@ var Webflow = Webflow || [];
 Webflow.push(function () {
     $(document).on('slider-event', '#SOP_slider', function (e, data) {
         console.log('SLIDER EVENT');
-
+        checkSliderIndex()
     });
 });
 
@@ -29,7 +29,7 @@ $(document).on("click", "#show_pulsation_markers", function () {
 $(document).on("click", "#show_sop_layer", function () {
     toggleLayers('sop-sb4a')
     pulsationMarkersVisibility(false);
-    checkSliderIndex()
+    checkSliderIndex();
 });
 
 function checkSliderIndex() {
