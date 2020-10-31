@@ -8,6 +8,58 @@ const prev = document.getElementById('prev_info');
 legend.style.display = 'none';
 
 
+var Webflow = Webflow || [];
+Webflow.push(function () {
+    $(document).on('slider-event', '#SOP_slider', function (e, data) {
+        console.log('SLIDER EVENT');
+
+    });
+});
+
+$(document).on("click", "#show_ranking_layer", function () {
+    toggleLayers('sop-sb4a-quality')
+    pulsationMarkersVisibility(false);
+});
+
+$(document).on("click", "#show_pulsation_markers", function () {
+    toggleLayers()//hide all 
+    pulsationMarkersVisibility(true);
+});
+
+$(document).on("click", "#show_sop_layer", function () {
+    toggleLayers('sop-sb4a')
+    pulsationMarkersVisibility(false);
+    checkSliderIndex()
+});
+
+function checkSliderIndex() {
+    const index = $("#SOP_slider").find(".w-slider-dot.w-active").index();
+    if (index >= 1) {
+        toggleLayers('sop-sb4a-eud')
+    } else {
+        toggleLayers('sop-sb4a')
+    }
+}
+
+function toggleLayers(layerName) { //show, hide, hide all layers without props
+    const layers = [
+        'sop-sb4a-quality',
+        'sop-sb4a-eud',
+        'sop-sb4a'
+    ]
+    layers.forEach(i => {
+        const v = (layerName && layerName === i) ? 1 : 0;
+        map.setPaintProperty(i, 'fill-opacity', v);
+    })
+}
+
+map.on("style.load", () => {
+    toggleLayers()// hide all layers
+})
+
+
+
+
 map.on('load', () => {
 
     //TOOLS&KNOWLEDGE MARKERS PART 
@@ -264,7 +316,7 @@ document.addEventListener("click", (e) => { // hide popup on mouse click
     const c = e.target.closest(".tools-info");
     if (c === null) {
         hideToolsMarkersInfoDiv()
-    } 
+    }
 })
 
 
@@ -274,7 +326,7 @@ function openPDF(url) {
     pdf.style.display = 'inline';
 
     const link = url;
-    console.log('link',link);
+    console.log('link', link);
     const pdfDiv = `<div>
     <button class="close_pdf" style="    position: absolute;
     /* padding: 10px; */

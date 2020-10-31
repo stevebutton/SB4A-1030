@@ -1812,38 +1812,6 @@
 
 
 
-  <script>
-    // MAP PART
-
-    var Webflow = Webflow || [];
-    Webflow.push(function () {
-      $(document).on('slider-event', '#SOP_slider', function (e, data) {
-        console.log('SLIDER EVENT');
-        const index = $("#SOP_slider").find(".w-slider-dot.w-active").index();
-        if (index === 1) {
-          map.setPaintProperty('sop-sb4a-eud', 'fill-opacity', 1);
-        }
-      });
-    });
-
-
-    $(document).on("click", "#show_ranking_layer", function () {
-      map.setPaintProperty('sop-sb4a-quality', 'fill-opacity', 1);
-      pulsationMarkersVisibility(true);
-    });
-
-    $(document).on("click", "#show_pulsation_markers", function () {
-      map.setPaintProperty('sop-sb4a', 'fill-opacity', 0);
-      pulsationMarkersVisibility(true);
-    });
-
-    $(document).on("click", "#show_sop_layer", function () {
-      map.setPaintProperty('sop-sb4a', 'fill-opacity', 1);
-      pulsationMarkersVisibility(false);
-    });
-
-
-  </script>
   <!-- add js files  -->
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <script src="js/radarChart.js" type="text/javascript"></script>
