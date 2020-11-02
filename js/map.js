@@ -18,6 +18,12 @@ Webflow.push(function () {
     });
 });
 
+$(document).on("click", "#missionreports", function () {
+    console.log('missionreports');
+    toggleToolsMarkersVisibility()
+});
+
+
 $(document).on("click", "#show_ranking_layer", function () {
     toggleLayers('sop-sb4a-quality')
     pulsationMarkersVisibility(false);
@@ -366,6 +372,19 @@ function openPDF(url) {
     pdf.innerHTML = pdfDiv;
 
 }
+
+
+var toggleToolsMarkersVisibility = (function () {
+    var visible = true;
+    return function () {
+        toolsMarkersVisibility(visible)
+        visible = !visible;
+        return visible
+    }
+  })();
+
+
+
 
 
 function toolsMarkersVisibility(visible) {
