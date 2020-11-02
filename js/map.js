@@ -22,7 +22,7 @@ $(document).on("click", "#missionreports", function () {
     console.log('missionreports');
     toggleToolsMarkersVisibility()
 });
-
+ 
 
 $(document).on("click", "#show_ranking_layer", function () {
     toggleLayers('sop-sb4a-quality')
