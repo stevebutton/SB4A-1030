@@ -202,8 +202,9 @@ blockquote {
 .intro-title {
   position: relative;
   left: 0px;
-  top: 85px;
+  top: 75px;
   z-index: 2000;
+  display: block;
   margin-top: 0px;
   margin-bottom: 40px;
   padding-left: 100px;
@@ -238,7 +239,7 @@ blockquote {
   right: auto;
   bottom: 0%;
   z-index: 2200;
-  display: block;
+  display: none;
   width: 40px;
   height: 100vh;
   -webkit-box-orient: vertical;
@@ -439,10 +440,10 @@ blockquote {
 }
 
 .tabs-content {
-  left: -180px;
+  left: -200px;
   overflow: visible;
   width: 720px;
-  margin-top: 10px;
+  margin-top: -20px;
   padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -935,15 +936,16 @@ blockquote {
   object-fit: fill;
 }
 
-.block-quote-white {
+.block-quote-intro-white {
   position: relative;
   left: -50px;
-  top: 40px;
+  top: 10px;
   margin-top: 40px;
-  padding-right: 10px;
+  padding-right: 35px;
+  border-left-style: none;
   font-family: Montserrat, sans-serif;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .heading-white {
@@ -1058,10 +1060,16 @@ blockquote {
 }
 
 .ss-wrapper {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 50px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -1098,7 +1106,7 @@ blockquote {
   position: relative;
   display: block;
   width: 200px;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-left: 100px;
   font-family: Oswald, sans-serif;
   font-size: 22px;
@@ -1124,7 +1132,7 @@ blockquote {
   right: 0%;
   bottom: auto;
   z-index: 3000;
-  display: none;
+  display: block;
   width: 100%;
   background-color: transparent;
 }
@@ -1136,13 +1144,22 @@ blockquote {
   right: 0%;
   bottom: 0%;
   z-index: 1200;
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden;
-  width: 600px;
+  width: 350px;
   margin-top: 0px;
-  padding-top: 40px;
-  padding-left: 60px;
-  border-radius: 5px;
+  padding-top: 20px;
+  padding-left: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-left: 5px solid #e4e4e4;
+  border-radius: 0px;
   background-color: #fff;
   color: #fff;
 }
@@ -1155,6 +1172,7 @@ blockquote {
   font-family: Oswald, sans-serif;
   color: #000;
   font-size: 18px;
+  font-weight: 300;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -1354,13 +1372,13 @@ blockquote {
 
 .block-quote-2 {
   width: 400px;
-  margin-top: 60px;
+  margin-top: -16px;
   padding-right: 0px;
   font-family: Oswald, sans-serif;
   color: #242424;
   font-size: 24px;
   line-height: 28px;
-  font-weight: 200;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -1516,11 +1534,15 @@ blockquote {
 .background-video {
   position: fixed;
   left: 0%;
-  top: -150px;
+  top: -230px;
   right: 0%;
   bottom: auto;
+  display: inline-block;
+  overflow: visible;
   width: 1440px;
   height: 1600px;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .button-2 {
@@ -1858,6 +1880,10 @@ blockquote {
 .block-quote-tools {
   position: relative;
   left: -25px;
+  padding-right: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .block-quote-kc {
@@ -2048,8 +2074,8 @@ blockquote {
 }
 
 .image-11 {
-  width: 164px;
-  height: 110px;
+  width: auto;
+  height: auto;
 }
 
 .tab-pane-sop-a {
@@ -2097,7 +2123,7 @@ blockquote {
 
 .text-block-3-copy {
   width: 500px;
-  padding-left: 150px;
+  padding-left: 80px;
   font-family: Montserrat, sans-serif;
   color: #fff;
 }
@@ -2193,7 +2219,7 @@ blockquote {
 }
 
 .image-13 {
-  width: 450px;
+  width: 500px;
   padding-left: 60px;
 }
 
@@ -2249,7 +2275,7 @@ blockquote {
   top: 0%;
   right: auto;
   bottom: 0%;
-  padding-left: 150px;
+  padding-left: 80px;
 }
 
 .heading-11 {
@@ -2281,6 +2307,163 @@ blockquote {
 .divider {
   color: #b4b4b4;
   text-align: left;
+}
+
+.block-quote-intro-black {
+  position: relative;
+  left: -50px;
+  top: 0px;
+  margin-top: 30px;
+  padding-right: 20px;
+  border-left-style: solid;
+  font-family: Montserrat, sans-serif;
+  color: #6d6d6d;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.videocontainer {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+}
+
+.enterprogram {
+  position: relative;
+  left: 0px;
+  top: auto;
+  right: 0%;
+  bottom: 20px;
+  z-index: 12000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  margin-top: 40px;
+  margin-left: 20%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.entersb4a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 40px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  opacity: 1;
+}
+
+.heading-14 {
+  margin-left: -15px;
+  font-family: Oswald, sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
+.link-block-8 {
+  opacity: 1;
+}
+
+.lottie-animation-8 {
+  width: 120px;
+}
+
+.ss-wrapper-sop {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.rich-text-block-4 {
+  font-size: 28px;
+}
+
+.text-span {
+  color: #a73333;
+}
+
+.text-span-2 {
+  color: #a73333;
+}
+
+.text-span-3 {
+  color: #acacac;
+  font-weight: 300;
+}
+
+.text-span-4 {
+  color: #acacac;
+  font-weight: 300;
+}
+
+.text-span-5 {
+  color: #acacac;
+  font-weight: 300;
+}
+
+.text-span-6 {
+  color: #acacac;
+}
+
+.text-span-7 {
+  color: #acacac;
+}
+
+.text-span-8 {
+  color: #acacac;
+}
+
+.text-span-9 {
+  color: #acacac;
+}
+
+.text-span-10 {
+  color: #acacac;
+}
+
+.text-span-11 {
+  color: #acacac;
+}
+
+.text-span-12 {
+  color: #acacac;
+}
+
+.text-span-13 {
+  color: #acacac;
+}
+
+.text-span-14 {
+  color: #acacac;
+}
+
+.text-span-15 {
+  color: #acacac;
 }
 
 @media screen and (min-width: 1280px) {
