@@ -1691,7 +1691,7 @@
       'stateofplay': {
         bearing: 0,
         duration: 5000,
-        center: [18.79277, 9.78503 ],
+        center: [18.79277, 9.78503],
         zoom: 2.4,
         pitch: 0
       },
@@ -1735,6 +1735,12 @@
       const d = document.getElementById(activeChapterName);
       if (d) { d.setAttribute('class', ''); }
       activeChapterName = chapterName;
+
+
+      if (activeChapterName !== "stateofplay") {
+        toggleLayers()// remove layers
+        pulsationMarkersVisibility(false); // remove pulsation
+      }
     }
     function isElementOnScreen(id) {
       var element = document.getElementById(id);

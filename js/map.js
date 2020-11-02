@@ -7,6 +7,8 @@ const next = document.getElementById('next_info');
 const prev = document.getElementById('prev_info');
 legend.style.display = 'none';
 
+const pulsationColor = '#D8D8D8'
+const pulsationColorActive = '#70A3D5'
 
 var Webflow = Webflow || [];
 Webflow.push(function () {
@@ -228,9 +230,9 @@ map.on('load', () => {
                 // info.style.display = 'inherit';
                 currentMarker = index;
                 // for blue ring
-                Array.from(document.querySelectorAll(".ringring")).forEach(i => i.style['border-color'] = "red")
+                Array.from(document.querySelectorAll(".ringring")).forEach(i => i.style['border-color'] = pulsationColor)
                 var circle = e.target.firstChild || e.target.parentNode.querySelector('.ringring')
-                circle.style['border-color'] = "#70A3D5"
+                circle.style['border-color'] = pulsationColorActive
 
                 var geo = arguments["0"]
                 var center = coord
@@ -378,7 +380,7 @@ function hideToolsMarkersInfoDiv() {
 function pulsationMarkersVisibility(visible) {
     allMarkers.forEach(i => {
         i.style.display = visible ? '' : 'none'
-        i.querySelector(".ringring").style['border-color'] = "red" //reset pulsation colors
+        i.querySelector(".ringring").style['border-color'] = pulsationColor //reset pulsation colors
     });
 }
 
