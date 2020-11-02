@@ -19,17 +19,39 @@ Webflow.push(function () {
 $(document).on("click", "#show_ranking_layer", function () {
     toggleLayers('sop-sb4a-quality')
     pulsationMarkersVisibility(false);
+    map.flyTo({
+        bearing: -0.03,
+        duration: 5000,
+        center: [15.63593, -2.02996],
+        zoom: 2.06,
+        pitch: 45
+    });
 });
 
 $(document).on("click", "#show_pulsation_markers", function () {
     toggleLayers()//hide all 
     pulsationMarkersVisibility(true);
+
+    map.flyTo({
+        bearing: 11,
+        duration: 5000,
+        center: [15.63593, -2.02996],
+        zoom: 2.53,
+        pitch: 0
+    });
 });
 
 $(document).on("click", "#show_sop_layer", function () {
     toggleLayers('sop-sb4a')
     pulsationMarkersVisibility(false);
     checkSliderIndex();
+    map.flyTo({
+        bearing: -0.03,
+        duration: 5000,
+        center: [15.63593, -2.02996],
+        zoom: 2.36,
+        pitch: 45
+    });
 });
 
 function checkSliderIndex() {
