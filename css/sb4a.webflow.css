@@ -86,7 +86,7 @@ blockquote {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
-  background-color: hsla(0, 4%, 66%, 0);
+  background-color: hsla(0, 4%, 66%, 0.44);
   -o-object-fit: fill;
   object-fit: fill;
 }
@@ -909,7 +909,7 @@ blockquote {
 }
 
 .copy-me-2 {
-  display: none;
+  display: block;
 }
 
 .image-5 {
@@ -3157,7 +3157,7 @@ blockquote {
   top: auto;
   right: 0%;
   bottom: -35px;
-  display: none;
+  display: block;
   margin-top: auto;
 }
 
@@ -3437,7 +3437,7 @@ blockquote {
 }
 
 .link-block-9-copy {
-  margin-right: 5px;
+  margin-right: 0px;
 }
 
 .tablink-sop1 {
@@ -3773,7 +3773,7 @@ blockquote {
   }
 }
 
-#w-node-bbd76b6d6576-7e9b0e04 {
+#w-node-bbd76b6d6576-9026e6bc {
   -ms-grid-column-align: auto;
   justify-self: auto;
 }
