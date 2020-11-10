@@ -1,6 +1,7 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Tue Nov 10 2020 14:27:55 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5fa9a05229ef7e099026e6bc" data-wf-site="5fa827c6534464cab39b0e03">
+
 <head>
   <meta charset="utf-8">
   <title>SB4A Nov 8 -New Structure</title>
@@ -9,30 +10,60 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/sb4a.webflow.css" rel="stylesheet" type="text/css">
-  <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="8519f49f-fe34-dd9f-203d-53dca2170801"] {opacity:0;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="8519f49f-fe34-dd9f-203d-53dca2170801"] {opacity:0;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="8519f49f-fe34-dd9f-203d-53dca2170801"] {opacity:0;}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="8519f49f-fe34-dd9f-203d-53dca2170801"] {opacity:0;}}</style>
+  <style>
+    @media (min-width:992px) {
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="8519f49f-fe34-dd9f-203d-53dca2170801"] {
+        opacity: 0;
+      }
+    }
+
+    @media (max-width:991px) and (min-width:768px) {
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="8519f49f-fe34-dd9f-203d-53dca2170801"] {
+        opacity: 0;
+      }
+    }
+
+    @media (max-width:767px) and (min-width:480px) {
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="8519f49f-fe34-dd9f-203d-53dca2170801"] {
+        opacity: 0;
+      }
+    }
+
+    @media (max-width:479px) {
+      html.w-mod-js:not(.w-mod-ix) [data-w-id="8519f49f-fe34-dd9f-203d-53dca2170801"] {
+        opacity: 0;
+      }
+    }
+  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700","Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]  }});</script>
+  <script
+    type="text/javascript">WebFont.load({ google: { families: ["Oswald:200,300,400,500,600,700", "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"] } });</script>
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <script
+    type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
-  <link href="https://uploads-ssl.webflow.com/5d88f370c5599e348fb22cbe/5d8b9e9b916e2bac8bac604b_mapbox_gl.txt" rel="stylesheet">
+  <link href="https://uploads-ssl.webflow.com/5d88f370c5599e348fb22cbe/5d8b9e9b916e2bac8bac604b_mapbox_gl.txt"
+    rel="stylesheet">
   <style>
-.mapboxgl-canvas {
--webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.mapboxgl-canvas:focus {
-outline:none;
-}
-.cartoon {
-pointer-events:none
-}
-</style>
+    .mapboxgl-canvas {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    .mapboxgl-canvas:focus {
+      outline: none;
+    }
+
+    .cartoon {
+      pointer-events: none
+    }
+  </style>
 </head>
+
 <body class="body">
-  
-  
-  <div class="copy-me-2">
+
+
+  <div class="copy-me-2 ">
     <div style="opacity: 0; display: none;" class="hide-me-overlay">
       <div class="modal-scroll">
         <div data-w-id="2e2d57f7-5cfa-4361-05a9-3d58b0b551ae" class="close-overlay close-video"></div>
@@ -62,31 +93,50 @@ pointer-events:none
       <div>Upgrade Modal</div>
     </a>
   </div>
-  
-  
+
+
   <div class="videocontainer w-container">
-    <div data-poster-url="https://uploads-ssl.webflow.com/5f92cfc37a605a199ffdd6c0/5f9d79a570ebb9e7dd9b91a9_SB4AbackVid-poster-00001.jpg" data-video-urls="videos/SB4AbackVid-transcode.mp4,videos/SB4AbackVid-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" id="Video" style="-webkit-transform:translate3d(0, 150PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 150PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 150PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 150PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="background-video w-background-video w-background-video-atom"><video autoplay="" loop="" style="background-image:url(&quot;https://uploads-ssl.webflow.com/5f92cfc37a605a199ffdd6c0/5f9d79a570ebb9e7dd9b91a9_SB4AbackVid-poster-00001.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
+    <div
+      data-poster-url="https://uploads-ssl.webflow.com/5f92cfc37a605a199ffdd6c0/5f9d79a570ebb9e7dd9b91a9_SB4AbackVid-poster-00001.jpg"
+      data-video-urls="videos/SB4AbackVid-transcode.mp4,videos/SB4AbackVid-transcode.webm" data-autoplay="true"
+      data-loop="true" data-wf-ignore="true" id="Video"
+      style="-webkit-transform:translate3d(0, 150PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 150PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 150PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 150PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+      class="background-video w-background-video w-background-video-atom"><video autoplay="" loop=""
+        style="background-image:url(&quot;https://uploads-ssl.webflow.com/5f92cfc37a605a199ffdd6c0/5f9d79a570ebb9e7dd9b91a9_SB4AbackVid-poster-00001.jpg&quot;)"
+        muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
         <source src="videos/SB4AbackVid-transcode.mp4" data-wf-ignore="true">
         <source src="videos/SB4AbackVid-transcode.webm" data-wf-ignore="true">
       </video></div>
   </div>
   <h1 data-w-id="8519f49f-fe34-dd9f-203d-53dca2170801" class="intro-title">Sustainable Business for Africa</h1>
-  <div data-collapse="all" data-animation="over-right" data-duration="650" data-easing="ease-in-sine" data-easing2="ease-out-sine" role="banner" class="spring-nav w-nav">
+  <div data-collapse="all" data-animation="over-right" data-duration="650" data-easing="ease-in-sine"
+    data-easing2="ease-out-sine" role="banner" class="spring-nav w-nav">
     <div class="w-container">
       <nav role="navigation" data-ix="spring-initial-0" class="spring-menu w-clearfix w-nav-menu">
         <blockquote class="block-quote-2"><span class="text-span">SB4A</span> MENU<br></blockquote>
         <a href="#features" class="nav-links w-nav-link"><span class="text-span-15">01</span> Introduction</a>
-        <a href="#keyconcepts" data-w-id="294ab4d9-985f-1876-1c5b-131445c0cdaf" class="nav-links w-nav-link"><span class="text-span-3">02</span> Key Concepts</a>
-        <a href="#facilitating-PPD" data-w-id="1c0ab456-bfb1-328a-f02a-976cdeae5551" class="nav-links w-nav-link"><span class="text-span-4">    03</span> facilitating ppd</a>
-        <a href="#fragile-contexts" data-w-id="5077bbb9-ea29-e9b1-e436-071eb19daf4e" class="nav-links w-nav-link"><span class="text-span-5">    04</span> facilitating ppd<br>         in fragile contexts</a>
-        <a href="#COVID-times" data-w-id="3ef058e7-7c00-3e9a-3a99-020c540517a4" class="nav-links w-nav-link"><span class="text-span-6">    05</span> facilitating ppd<br>         in covid-19 times</a>
-        <a href="#mapping-stakeholders" data-w-id="f32e7002-30fc-176e-1056-0c11b41e6854" class="nav-links w-nav-link"><span class="text-span-8">    06</span> mapping          stakeholders</a>
-        <a href="#supporting-inclusivity" data-w-id="98d7d3c3-a25d-9ca0-ce2b-bdf87721038c" class="nav-links w-nav-link"><span class="text-span-9">    07</span> supporting          inclusivity</a>
-        <a href="#monitoring-evaluation" data-w-id="d16cd048-3636-335d-74df-3c4c1f161c90" class="nav-links w-nav-link"><span class="text-span-10">    08</span> monitoring &amp;          evaluation</a>
-        <a href="#policybackground" data-w-id="294ab4d9-985f-1876-1c5b-131445c0cdb1" class="nav-links w-nav-link"><span class="text-span-11">    09</span> Policy Background</a>
-        <a href="#sb4atimeline" data-w-id="76d3189e-75de-0fc6-f5f8-71b60fd50052" class="nav-links w-nav-link"><span class="text-span-12">    10</span> SB4A Timeline<br>‍</a>
-        <a href="#stateofplay" data-w-id="27758659-f804-fbff-bc11-ecf7cefb3da9" class="nav-links w-nav-link"><span class="text-span-13">11</span> SB4A state of play 2019</a>
-        <a href="#library" data-w-id="b6e274b3-7299-5b8b-da2d-7affa4e18bda" class="nav-links w-nav-link"><span class="text-span-14">12</span> library</a>
+        <a href="#keyconcepts" data-w-id="294ab4d9-985f-1876-1c5b-131445c0cdaf" class="nav-links w-nav-link"><span
+            class="text-span-3">02</span> Key Concepts</a>
+        <a href="#facilitating-PPD" data-w-id="1c0ab456-bfb1-328a-f02a-976cdeae5551" class="nav-links w-nav-link"><span
+            class="text-span-4">    03</span> facilitating ppd</a>
+        <a href="#fragile-contexts" data-w-id="5077bbb9-ea29-e9b1-e436-071eb19daf4e" class="nav-links w-nav-link"><span
+            class="text-span-5">    04</span> facilitating ppd<br>         in fragile contexts</a>
+        <a href="#COVID-times" data-w-id="3ef058e7-7c00-3e9a-3a99-020c540517a4" class="nav-links w-nav-link"><span
+            class="text-span-6">    05</span> facilitating ppd<br>         in covid-19 times</a>
+        <a href="#mapping-stakeholders" data-w-id="f32e7002-30fc-176e-1056-0c11b41e6854"
+          class="nav-links w-nav-link"><span class="text-span-8">    06</span> mapping          stakeholders</a>
+        <a href="#supporting-inclusivity" data-w-id="98d7d3c3-a25d-9ca0-ce2b-bdf87721038c"
+          class="nav-links w-nav-link"><span class="text-span-9">    07</span> supporting          inclusivity</a>
+        <a href="#monitoring-evaluation" data-w-id="d16cd048-3636-335d-74df-3c4c1f161c90"
+          class="nav-links w-nav-link"><span class="text-span-10">    08</span> monitoring &amp;          evaluation</a>
+        <a href="#policybackground" data-w-id="294ab4d9-985f-1876-1c5b-131445c0cdb1" class="nav-links w-nav-link"><span
+            class="text-span-11">    09</span> Policy Background</a>
+        <a href="#sb4atimeline" data-w-id="76d3189e-75de-0fc6-f5f8-71b60fd50052" class="nav-links w-nav-link"><span
+            class="text-span-12">    10</span> SB4A Timeline<br>‍</a>
+        <a href="#stateofplay" data-w-id="27758659-f804-fbff-bc11-ecf7cefb3da9" class="nav-links w-nav-link"><span
+            class="text-span-13">11</span> SB4A state of play 2019</a>
+        <a href="#library" data-w-id="b6e274b3-7299-5b8b-da2d-7affa4e18bda" class="nav-links w-nav-link"><span
+            class="text-span-14">12</span> library</a>
       </nav>
       <div data-ix="spring-nav-animation" class="spring-nav-menu w-nav-button">
         <div class="spring-1"></div>
@@ -96,12 +146,34 @@ pointer-events:none
     </div>
   </div>
   <div style="opacity:0" class="lottie-box">
-    <a data-w-id="325c4f07-531e-7fa3-acd5-9952313c240f" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="button_link w-inline-block"><img src="images/Mission-Reports.png" loading="lazy" alt="" class="missionreports"></a>
-    <a href="#library" data-w-id="9a823f19-edbc-868d-1f38-84409e0b1176" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button_link w-inline-block"><img src="images/Library.png" loading="lazy" alt="" class="library"></a>
-    <a href="#stateofplay" data-w-id="b1023e7a-aa6b-9e26-e3ec-6c5dffcb6b95" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button_link w-inline-block"><img src="images/SoP.png" loading="lazy" alt="" class="sop"></a>
+    <a data-w-id="325c4f07-531e-7fa3-acd5-9952313c240f"
+      style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+      href="#" class="button_link w-inline-block"><img src="images/Mission-Reports.png" loading="lazy" alt=""
+        class="missionreports"></a>
+    <a href="#library" data-w-id="9a823f19-edbc-868d-1f38-84409e0b1176"
+      style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+      class="button_link w-inline-block"><img src="images/Library.png" loading="lazy" alt="" class="library"></a>
+    <a href="#stateofplay" data-w-id="b1023e7a-aa6b-9e26-e3ec-6c5dffcb6b95"
+      style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.1, 1.1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+      class="button_link w-inline-block"><img src="images/SoP.png" loading="lazy" alt="" class="sop"></a>
   </div>
-  <div id="cartoon" style="-webkit-transform:translate3d(140PX, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(140PX, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(140PX, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(140PX, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="cartoon-animation"><img src="images/Group-6.png" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="076e93ba-515b-3325-1ebc-b02c46c6cc4a" alt="" class="image-5"><img src="images/cartoon1.png" loading="lazy" style="-webkit-transform:translate3d(-150PX, 330PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-150PX, 330PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-150PX, 330PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-150PX, 330PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="cartoon1"><img src="images/Cartoon2.png" loading="lazy" style="-webkit-transform:translate3d(-70PX, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-70PX, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-70PX, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-70PX, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" data-w-id="59fdab7f-21cc-864e-88ec-5e6057940c33" alt="" class="cartoon2"><img src="images/Cartoon3.png" loading="lazy" style="-webkit-transform:translate3d(-4PX, 190PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-4PX, 190PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-4PX, 190PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-4PX, 190PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="6ddf9419-2f8a-5910-d110-7daffaeb9184" alt="" class="cartoon3"></div>
-  <div id="cartoon" data-w-id="768a678c-f360-4666-a11d-b689dbb5c127" class="cartoon"><img src="images/Group-6.png" loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="768a678c-f360-4666-a11d-b689dbb5c128" alt="" class="image-5"></div>
+  <div id="cartoon"
+    style="-webkit-transform:translate3d(140PX, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(140PX, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(140PX, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(140PX, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+    class="cartoon-animation"><img src="images/Group-6.png" loading="lazy"
+      style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+      data-w-id="076e93ba-515b-3325-1ebc-b02c46c6cc4a" alt="" class="image-5"><img src="images/cartoon1.png"
+      loading="lazy"
+      style="-webkit-transform:translate3d(-150PX, 330PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-150PX, 330PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-150PX, 330PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-150PX, 330PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+      alt="" class="cartoon1"><img src="images/Cartoon2.png" loading="lazy"
+      style="-webkit-transform:translate3d(-70PX, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-70PX, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-70PX, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-70PX, 0, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+      data-w-id="59fdab7f-21cc-864e-88ec-5e6057940c33" alt="" class="cartoon2"><img src="images/Cartoon3.png"
+      loading="lazy"
+      style="-webkit-transform:translate3d(-4PX, 190PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-4PX, 190PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-4PX, 190PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-4PX, 190PX, 0) scale3d(2, 2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+      data-w-id="6ddf9419-2f8a-5910-d110-7daffaeb9184" alt="" class="cartoon3"></div>
+  <div id="cartoon" data-w-id="768a678c-f360-4666-a11d-b689dbb5c127" class="cartoon"><img src="images/Group-6.png"
+      loading="lazy"
+      style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.9, 1.9, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+      data-w-id="768a678c-f360-4666-a11d-b689dbb5c128" alt="" class="image-5"></div>
   <div class="page-wrap">
     <div style="opacity:0" class="banner">
       <h2 class="heading-4">SUSTAINABLE BUSINESS FOR AFRICA</h2>
@@ -120,11 +192,22 @@ pointer-events:none
     <div id="features" class="features">
       <div class="intro-section">
         <div class="div-block-2-open">
-          <blockquote data-w-id="d3022359-9429-2333-4c0d-69ca25ce0acc" style="opacity:0" class="block-quote-intro-black">The Sustainable Business for Africa (SB4A) platform is an initiative to help EU staff in headquarters and in African delegations engage in a structured dialogue with the local and European private sector.<br></blockquote>
-          <blockquote data-w-id="3f41126b-7d98-5900-5363-6fb8a3368577" style="opacity:0" class="block-quote-intro-white">This interactive application will provide you with concrete examples and advice on public-private dialogue. Explore to find practical tips on how to implement public-private dialogue, understand key concepts and policy background.<br></blockquote>
-          <div data-w-id="4495756e-e15c-db0a-6b57-f06a73311ccc" style="opacity:0;-webkit-transform:translate3d(0, 75PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="entersb4a">
+          <blockquote data-w-id="d3022359-9429-2333-4c0d-69ca25ce0acc" style="opacity:0"
+            class="block-quote-intro-black">The Sustainable Business for Africa (SB4A) platform is an initiative to help
+            EU staff in headquarters and in African delegations engage in a structured dialogue with the local and
+            European private sector.<br></blockquote>
+          <blockquote data-w-id="3f41126b-7d98-5900-5363-6fb8a3368577" style="opacity:0"
+            class="block-quote-intro-white">This interactive application will provide you with concrete examples and
+            advice on public-private dialogue. Explore to find practical tips on how to implement public-private
+            dialogue, understand key concepts and policy background.<br></blockquote>
+          <div data-w-id="4495756e-e15c-db0a-6b57-f06a73311ccc"
+            style="opacity:0;-webkit-transform:translate3d(0, 75PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+            class="entersb4a">
             <a href="#keyconcepts" data-w-id="7a484862-0cf3-1117-568c-6360507a4c5c" class="link-block-8 w-inline-block">
-              <div data-w-id="26da54cc-c17e-a606-09f2-b5a497ce07da" data-animation-type="lottie" data-src="documents/8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0" class="lottie-animation-8"></div>
+              <div data-w-id="26da54cc-c17e-a606-09f2-b5a497ce07da" data-animation-type="lottie"
+                data-src="documents/8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1"
+                data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0"
+                class="lottie-animation-8"></div>
             </a>
             <h3 class="heading-14">start the program</h3>
           </div>
@@ -134,32 +217,49 @@ pointer-events:none
         <div class="section__inner-wrap">
           <div style="opacity:0" class="div-block-2">
             <h1 class="heading"><span class="number">01</span> key concepts</h1>
-            <blockquote class="block-quote-kc">There are three key concepts that drive the implementation and success of the SB4A.<br> <br>They are Private Sector Engagement (PSE), Structured Dialogue and Public-Private Dialogue. <br><br>Understanding each is a necessary step to implement SB4A initiatives.<br></blockquote>
+            <blockquote class="block-quote-kc">There are three key concepts that drive the implementation and success of
+              the SB4A.<br> <br>They are Private Sector Engagement (PSE), Structured Dialogue and Public-Private
+              Dialogue. <br><br>Understanding each is a necessary step to implement SB4A initiatives.<br></blockquote>
           </div>
-          <div data-duration-in="500" data-duration-out="500" id="tabs-keyconcepts" style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="tabs-keyconcepts w-tabs">
+          <div data-duration-in="500" data-duration-out="500" id="tabs-keyconcepts"
+            style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+            class="tabs-keyconcepts w-tabs">
             <div class="tabs-menu-keyconcepts w-tab-menu">
-              <a data-w-tab="PSE" id="FlytoSA" data-w-id="046e0b33-1703-7e70-953f-776adc50b547" class="tab-link-pse w-inline-block w-tab-link"><img src="images/PSE.png" loading="lazy" alt="" class="img-pse"></a>
-              <a data-w-tab="SD" id="FlytoUganda" data-w-id="046e0b33-1703-7e70-953f-776adc50b54a" class="tab-link-sd w-inline-block w-tab-link w--current"><img src="images/SD.png" loading="lazy" alt=""></a>
-              <a data-w-tab="PPD" data-w-id="046e0b33-1703-7e70-953f-776adc50b54d" class="tab-link-tab-3 w-inline-block w-tab-link"><img src="images/PPD.png" loading="lazy" alt=""></a>
+              <a data-w-tab="PSE" id="FlytoSA" data-w-id="046e0b33-1703-7e70-953f-776adc50b547"
+                class="tab-link-pse w-inline-block w-tab-link"><img src="images/PSE.png" loading="lazy" alt=""
+                  class="img-pse"></a>
+              <a data-w-tab="SD" id="FlytoUganda" data-w-id="046e0b33-1703-7e70-953f-776adc50b54a"
+                class="tab-link-sd w-inline-block w-tab-link w--current"><img src="images/SD.png" loading="lazy"
+                  alt=""></a>
+              <a data-w-tab="PPD" data-w-id="046e0b33-1703-7e70-953f-776adc50b54d"
+                class="tab-link-tab-3 w-inline-block w-tab-link"><img src="images/PPD.png" loading="lazy" alt=""></a>
             </div>
             <div class="tabs-content w-tab-content">
               <div data-w-tab="PSE" class="tab-pane-tab-1 w-tab-pane">
                 <div class="ss-wrapper">
-                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500" data-infinite="1" id="slider-pse" class="slider w-slider">
+                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500"
+                    data-infinite="1" id="slider-pse" class="slider w-slider">
                     <div class="mask w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Public-private dialogue in  South Africa</h4><img src="images/SA_bake.png" loading="lazy" alt="" class="image-10">
-                            <p class="bake72__summary">Massimo de Luca<br>Economic Partnership<br>Agreements -ACP Countries DG Trade</p>
+                            <h4 class="media_card_title">Public-private dialogue in  South Africa</h4><img
+                              src="images/SA_bake.png" loading="lazy" alt="" class="image-10">
+                            <p class="bake72__summary">Massimo de Luca<br>Economic Partnership<br>Agreements -ACP
+                              Countries DG Trade</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
                             </div>
                           </a>
                           <div class="rte w-richtext">
                             <h2>Private Sector Engagement</h2>
-                            <p>Private Sector Engagement refers to activities of donors that enable and encourage private sector actors to contribute to development objectives.</p>
-                            <p><strong>PSE</strong> can lead to an improved investment climate and potentially contribute to achieving a more inclusive growth. Indeed, by enabling and setting incentives for investments in low-income communities and sectors that specifically benefit the poor, the EU can provide incentives for the private sector to operate towards poor communities.</p>
+                            <p>Private Sector Engagement refers to activities of donors that enable and encourage
+                              private sector actors to contribute to development objectives.</p>
+                            <p><strong>PSE</strong> can lead to an improved investment climate and potentially
+                              contribute to achieving a more inclusive growth. Indeed, by enabling and setting
+                              incentives for investments in low-income communities and sectors that specifically benefit
+                              the poor, the EU can provide incentives for the private sector to operate towards poor
+                              communities.</p>
                             <p>‍</p>
                             <p>‍</p>
                           </div>
@@ -178,20 +278,31 @@ pointer-events:none
               </div>
               <div data-w-tab="SD" class="tab-pane-sd w-tab-pane w--tab-active">
                 <div class="ss-wrapper">
-                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500" data-infinite="1" id="slider-sd" class="slider w-slider">
+                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500"
+                    data-infinite="1" id="slider-sd" class="slider w-slider">
                     <div class="mask w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
-                          <a data-w-id="06271968-1889-ecae-f3b9-49906dbe3925" style="opacity:0;-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Structured Dialogue<br>in Uganda</h4><img src="images/bake-image.png" loading="lazy" alt="" class="image-10">
+                          <a data-w-id="06271968-1889-ecae-f3b9-49906dbe3925"
+                            style="opacity:0;-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            href="#" class="bake72 w-inline-block">
+                            <h4 class="media_card_title">Structured Dialogue<br>in Uganda</h4><img
+                              src="images/bake-image.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: PPD in practice with Uganda</p>
-                            <div id="sym-link" videourl="vid/Uganda-interview+maps.mp4" data-w-id="fbc5da24-ad32-fddc-367f-79f94ea025ce" style="width:225PX;height:6PX" class="bake72__button">
+                            <div id="sym-link" videourl="vid/Uganda-interview+maps.mp4"
+                              data-w-id="fbc5da24-ad32-fddc-367f-79f94ea025ce" style="width:225PX;height:6PX"
+                              class="bake72__button view-video">
                               <div class="bake72__button__text">watch the video</div>
                             </div>
                           </a>
                           <div class="rte w-richtext">
                             <h2>Structured Dialogue</h2>
-                            <p>“Structured dialogue”describes the process of engaging with stakeholders in a planned, regular, timely, predictable and transparent manner. It is used in contrast to “ad-hoc consulta­tions” as stakeholders are invited to provide their input in a well-planned set-up, and they receive feedback of the outcomes of the consultations as well as information about the overall process of dialogue. It is also different from “one-off consultations”, where the EU seeks a specific input from the private sector.</p>
+                            <p>“Structured dialogue”describes the process of engaging with stakeholders in a planned,
+                              regular, timely, predictable and transparent manner. It is used in contrast to “ad-hoc
+                              consulta­tions” as stakeholders are invited to provide their input in a well-planned
+                              set-up, and they receive feedback of the outcomes of the consultations as well as
+                              information about the overall process of dialogue. It is also different from “one-off
+                              consultations”, where the EU seeks a specific input from the private sector.</p>
                           </div>
                         </div>
                       </div>
@@ -208,12 +319,14 @@ pointer-events:none
               </div>
               <div data-w-tab="PPD" class="tab-pane-ppd w-tab-pane">
                 <div class="ss-wrapper">
-                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500" data-infinite="1" id="slider-ppd" class="slider w-slider">
+                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500"
+                    data-infinite="1" id="slider-ppd" class="slider w-slider">
                     <div class="mask w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Public-Private Dialogue - DEVCO Academy</h4><img src="images/blue.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Public-Private Dialogue - DEVCO Academy</h4><img
+                              src="images/blue.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: PPD in practice with Uganda</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -221,14 +334,20 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h2>Public-Private Dialogue</h2>
-                            <p>“Public-private dialogue” (PPD) is a type of structured dialogue. It is a systematic, planned, participatory, and inclusive approach to policymaking. It is directed at reforming governance and the business climate, especially where other policy institutions are underperforming. Dialogue improves the flow of information relating to economic policy and builds legitimacy into the policy process. It also seeks to overcome impediments to transparency and accommodate greater inclusion of stakeholders in decision-making.</p>
+                            <p>“Public-private dialogue” (PPD) is a type of structured dialogue. It is a systematic,
+                              planned, participatory, and inclusive approach to policymaking. It is directed at
+                              reforming governance and the business climate, especially where other policy institutions
+                              are underperforming. Dialogue improves the flow of information relating to economic policy
+                              and builds legitimacy into the policy process. It also seeks to overcome impediments to
+                              transparency and accommodate greater inclusion of stakeholders in decision-making.</p>
                           </div>
                         </div>
                       </div>
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Public-Private Dialogue - DEVCO Academy</h4><img src="images/blue.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Public-Private Dialogue - DEVCO Academy</h4><img
+                              src="images/blue.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: PPD in practice with Uganda</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -236,14 +355,20 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h2>Public-Private Dialogue</h2>
-                            <p>The benefits of Public-Private Dialogues are not immediate but span in the long run. Indeed, frequent consultations with the private sector help governments to prioritise reforms and secure confidence from investors in a long-term perspective. PPDs contribute to promote transparency, good governance and encourage governments to perform regulatory impact assessments, therefore creating better jobs through new or expanded inclusive businesses.</p>
+                            <p>The benefits of Public-Private Dialogues are not immediate but span in the long run.
+                              Indeed, frequent consultations with the private sector help governments to prioritise
+                              reforms and secure confidence from investors in a long-term perspective. PPDs contribute
+                              to promote transparency, good governance and encourage governments to perform regulatory
+                              impact assessments, therefore creating better jobs through new or expanded inclusive
+                              businesses.</p>
                           </div>
                         </div>
                       </div>
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Public-Private Dialogue - DEVCO Academy</h4><img src="images/blue.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Public-Private Dialogue - DEVCO Academy</h4><img
+                              src="images/blue.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: PPD in practice with Uganda</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -251,7 +376,16 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h2>Sector Specific PPD</h2>
-                            <p>Practitioners believe that sector-specific PPDs can sometimes bring more direct and tangible results than PPD on crosscutting issues and provide to stakeholders more incentives to collaborate. Sector-specific structured dialogue nonetheless present risks: lack of integration into the crosscutting dialogue process, difficult selection of priority reform sectors, and lack of transparency. More generally, there is a trade-off between “representativeness” and “capacity for dialogue”: cross-sector private sector organisations are more likely to gather a large number of stakeholders and have a better understanding of the broader business environment. On the contrary, sectoral organisations generally have an in-depth knowledge of key sectoral issues but miss the bigger picture of the business environment.</p>
+                            <p>Practitioners believe that sector-specific PPDs can sometimes bring more direct and
+                              tangible results than PPD on crosscutting issues and provide to stakeholders more
+                              incentives to collaborate. Sector-specific structured dialogue nonetheless present risks:
+                              lack of integration into the crosscutting dialogue process, difficult selection of
+                              priority reform sectors, and lack of transparency. More generally, there is a trade-off
+                              between “representativeness” and “capacity for dialogue”: cross-sector private sector
+                              organisations are more likely to gather a large number of stakeholders and have a better
+                              understanding of the broader business environment. On the contrary, sectoral organisations
+                              generally have an in-depth knowledge of key sectoral issues but miss the bigger picture of
+                              the business environment.</p>
                           </div>
                         </div>
                       </div>
@@ -269,16 +403,22 @@ pointer-events:none
             </div>
           </div>
           <div id="next" class="nextsection">
-            <a href="#facilitating-PPD" data-w-id="a097ea82-607e-7c5e-b2fd-3c89600e7279" class="link-block-4 w-inline-block">
-              <div data-w-id="a097ea82-607e-7c5e-b2fd-3c89600e727a" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
+            <a href="#facilitating-PPD" data-w-id="a097ea82-607e-7c5e-b2fd-3c89600e7279"
+              class="link-block-4 w-inline-block">
+              <div data-w-id="a097ea82-607e-7c5e-b2fd-3c89600e727a" data-animation-type="lottie"
+                data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json"
+                data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
             </a>
             <div style="opacity:0" class="lottie">Next: Facilitating PPD</div>
           </div>
-          <div class="copy-me-2">
+          <!-- <div class="copy-me-2">
             <div style="opacity:0;display:none" class="hide-me-overlay">
               <div class="modal-scroll">
                 <div data-w-id="9c07a0a5-09c9-b580-4fbd-a95ed1c123bc" class="close-overlay"></div>
-                <div style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="upgrade-container">
+                <div
+                  style="-webkit-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                  class="upgrade-container">
                   <div class="_w-embed w-embed"></div>
                   <div class="upgrade-row">
                     <div class="pricing-box">
@@ -296,28 +436,40 @@ pointer-events:none
             <a data-w-id="9c07a0a5-09c9-b580-4fbd-a95ed1c123c7" href="#" class="upgrade-button w-inline-block">
               <div>Upgrade Modal</div>
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
       <div id="facilitating-PPD" data-w-id="e4eb6603-7c5c-f0fb-6dbd-eaa8f0e4e0ac" style="opacity:0" class="section">
         <div class="section__inner-wrap">
           <div style="opacity:0" class="div-block-2">
             <h1 class="heading"><span class="number">02</span> facilitating ppd</h1>
-            <blockquote class="block-quote-facilitate">To facilitate public-private dialogue, EU Delegations must focus on these four success factors:<br>‍<br>- Working with Champions <br>- Inclusiveness<br>- Sustainability<br>- Capacity</blockquote>
+            <blockquote class="block-quote-facilitate">To facilitate public-private dialogue, EU Delegations must focus
+              on these four success factors:<br>‍<br>- Working with Champions <br>- Inclusiveness<br>-
+              Sustainability<br>- Capacity</blockquote>
           </div>
-          <div data-duration-in="300" data-duration-out="100" id="tabs-facppd" style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="tabs-facppd w-tabs">
+          <div data-duration-in="300" data-duration-out="100" id="tabs-facppd"
+            style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+            class="tabs-facppd w-tabs">
             <div class="tabs-menufacppd w-tab-menu">
-              <a data-w-tab="Tab 1" id="FlytoChampions" data-w-id="4b72f738-e791-5bf4-773f-607199ef2c59" class="tab-link-champions w-inline-block w-tab-link"><img src="images/WORKING-WITH-CHAMPIONS.png" loading="lazy" alt="" class="img-champions"></a>
-              <a data-w-tab="Tab 2" class="tab-link-tab-2-2 w-inline-block w-tab-link"><img src="images/INCLUSIVENESS.png" loading="lazy" alt="" class="image-19"></a>
-              <a data-w-tab="Tab 3" class="tab-link-tab-3-2 w-inline-block w-tab-link"><img src="images/SUSTAINABILITY.png" loading="lazy" alt="" class="image-21"></a>
-              <a data-w-tab="Tab 4" class="tab-link-tab-4-3 w-inline-block w-tab-link"><img src="images/CAPACITY.png" loading="lazy" alt="" class="image-20"></a>
+              <a data-w-tab="Tab 1" id="FlytoChampions" data-w-id="4b72f738-e791-5bf4-773f-607199ef2c59"
+                class="tab-link-champions w-inline-block w-tab-link"><img src="images/WORKING-WITH-CHAMPIONS.png"
+                  loading="lazy" alt="" class="img-champions"></a>
+              <a data-w-tab="Tab 2" class="tab-link-tab-2-2 w-inline-block w-tab-link"><img
+                  src="images/INCLUSIVENESS.png" loading="lazy" alt="" class="image-19"></a>
+              <a data-w-tab="Tab 3" class="tab-link-tab-3-2 w-inline-block w-tab-link"><img
+                  src="images/SUSTAINABILITY.png" loading="lazy" alt="" class="image-21"></a>
+              <a data-w-tab="Tab 4" class="tab-link-tab-4-3 w-inline-block w-tab-link"><img src="images/CAPACITY.png"
+                  loading="lazy" alt="" class="image-20"></a>
             </div>
             <div class="tabs-content-6 w-tab-content">
               <div data-w-tab="Tab 1" class="tab-pane-champions w-tab-pane">
                 <div class="ss-wrapper">
                   <div class="card-nov">
-                    <a data-w-id="897baad7-81dd-36ee-a476-7e6658c795fa" style="opacity:0;-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="bake72 w-inline-block">
-                      <h4 class="media_card_title">PPD definitions and best practices</h4><img loading="lazy" src="images/card-Francois.png" alt="" class="image-10">
+                    <a data-w-id="897baad7-81dd-36ee-a476-7e6658c795fa"
+                      style="opacity:0;-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                      href="#" class="bake72 w-inline-block">
+                      <h4 class="media_card_title">PPD definitions and best practices</h4><img loading="lazy"
+                        src="images/card-Francois.png" alt="" class="image-10">
                       <p data-w-id="58eee6de-e2b8-d152-3454-44cef0a30ce9" class="bake72__summary">François Kacen</p>
                       <div id="sym-link" style="width:225PX;height:6PX" class="bake72__button">
                         <div class="bake72__button__text">watch the video</div>
@@ -325,8 +477,12 @@ pointer-events:none
                     </a>
                     <div class="rte w-richtext">
                       <h2>Working with Champions</h2>
-                      <p>The first success factor is to identify and work with Champions from the public and private sectors, to let them take ownership of the dialogue process. Putting Champions at the forefront of PPD will allow the whole processto gain credibility and lead to stronger recognition. </p>
-                      <blockquote>Public sector champions are partners with strong leadership and buy-in. Private sector champions are business representative that are independent and have the ability to represent a group or community.</blockquote>
+                      <p>The first success factor is to identify and work with Champions from the public and private
+                        sectors, to let them take ownership of the dialogue process. Putting Champions at the forefront
+                        of PPD will allow the whole processto gain credibility and lead to stronger recognition. </p>
+                      <blockquote>Public sector champions are partners with strong leadership and buy-in. Private sector
+                        champions are business representative that are independent and have the ability to represent a
+                        group or community.</blockquote>
                     </div>
                   </div>
                 </div>
@@ -334,7 +490,8 @@ pointer-events:none
               <div data-w-tab="Tab 2" class="w-tab-pane">
                 <div class="card-nov">
                   <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                    <h4 class="media_card_title">Structured Dialogue<br>in Uganda</h4><img src="images/bake-image.png" loading="lazy" alt="" class="image-10">
+                    <h4 class="media_card_title">Structured Dialogue<br>in Uganda</h4><img src="images/bake-image.png"
+                      loading="lazy" alt="" class="image-10">
                     <p class="bake72__summary">Description max two lines: PPD in practice with Uganda</p>
                     <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                       <div class="bake72__button__text">watch the video</div>
@@ -342,15 +499,19 @@ pointer-events:none
                   </a>
                   <div class="rte w-richtext">
                     <h2>Inclusiveness</h2>
-                    <p>The dialogue will be as inclusive as possible, reaching out and taking inconsideration independent structures, supporting unorganised interests to participate and accommodating and representing the diversity of private sector interests. </p>
-                    <p>All kinds of businesses should be reached out to and included in the discussions, be they formal and informal, large and small, local or international. </p>
+                    <p>The dialogue will be as inclusive as possible, reaching out and taking inconsideration
+                      independent structures, supporting unorganised interests to participate and accommodating and
+                      representing the diversity of private sector interests. </p>
+                    <p>All kinds of businesses should be reached out to and included in the discussions, be they formal
+                      and informal, large and small, local or international. </p>
                   </div>
                 </div>
               </div>
               <div data-w-tab="Tab 3" class="w-tab-pane">
                 <div class="card-nov">
                   <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                    <h4 class="media_card_title">Mission Reports?</h4><img src="images/card-default.png" loading="lazy" alt="" class="image-10">
+                    <h4 class="media_card_title">Mission Reports?</h4><img src="images/card-default.png" loading="lazy"
+                      alt="" class="image-10">
                     <p class="bake72__summary">Description max two lines: PPD in practice with Uganda</p>
                     <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                       <div class="bake72__button__text">read the report</div>
@@ -358,8 +519,10 @@ pointer-events:none
                   </a>
                   <div class="rte w-richtext">
                     <h2>Sustainability</h2>
-                    <p>To be sustainable, a public-private dialogue process must meet operational and financial ial sustainability and have a sustained mandate. </p>
-                    <p>In the case of a donor supporting PPD and once it meets these 3 sustainability pillars, the donor can exit the process successfully. </p>
+                    <p>To be sustainable, a public-private dialogue process must meet operational and financial ial
+                      sustainability and have a sustained mandate. </p>
+                    <p>In the case of a donor supporting PPD and once it meets these 3 sustainability pillars, the donor
+                      can exit the process successfully. </p>
                     <p>‍</p>
                     <p>‍</p>
                   </div>
@@ -370,8 +533,13 @@ pointer-events:none
                   <div class="card-fill"></div>
                   <div class="rte w-richtext">
                     <h2>Capacity</h2>
-                    <p>PPD stakeholder, be they public or private, need strong capacities to provide coherent policy recommendations, negotiate constructively, analyse evidence and nurture the on-going dialogue. </p>
-                    <p>On the private sector side, organisations must be in capacity to propose evidence-based reforms and coordinate businesses’ interests, while public sector representatives must have the capacity and resources to analyse, formulate coherent reforms, implement and monitor the reforms and communicate with stakeholders. </p>
+                    <p>PPD stakeholder, be they public or private, need strong capacities to provide coherent policy
+                      recommendations, negotiate constructively, analyse evidence and nurture the on-going dialogue.
+                    </p>
+                    <p>On the private sector side, organisations must be in capacity to propose evidence-based reforms
+                      and coordinate businesses’ interests, while public sector representatives must have the capacity
+                      and resources to analyse, formulate coherent reforms, implement and monitor the reforms and
+                      communicate with stakeholders. </p>
                     <p>‍</p>
                     <p>‍</p>
                     <p>‍</p>
@@ -381,8 +549,12 @@ pointer-events:none
             </div>
           </div>
           <div id="next" class="nextsection">
-            <a href="#fragile-contexts" data-w-id="c51dec65-f145-6504-e6d2-27018222fbcc" class="link-block-sop w-inline-block">
-              <div data-w-id="c51dec65-f145-6504-e6d2-27018222fbcd" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
+            <a href="#fragile-contexts" data-w-id="c51dec65-f145-6504-e6d2-27018222fbcc"
+              class="link-block-sop w-inline-block">
+              <div data-w-id="c51dec65-f145-6504-e6d2-27018222fbcd" data-animation-type="lottie"
+                data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json"
+                data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
             </a>
             <div class="lottie-4">Next: Facilitating PPD in Fragile Contexts</div>
           </div>
@@ -392,21 +564,30 @@ pointer-events:none
         <div class="section__inner-wrap">
           <div style="opacity:0" class="div-block-2">
             <h1 class="heading"><span class="number">03</span> facilitating ppd in fragile contexts</h1>
-            <blockquote class="block-quote-fragile">Public-Private Dialogue (PPD) is particularly useful in fragile and conflict affected states (FCAS) to mitigate entrenched interests, rebuild trust and spur inclusive and sustainable growth. </blockquote>
+            <blockquote class="block-quote-fragile">Public-Private Dialogue (PPD) is particularly useful in fragile and
+              conflict affected states (FCAS) to mitigate entrenched interests, rebuild trust and spur inclusive and
+              sustainable growth. </blockquote>
           </div>
-          <div data-duration-in="300" data-duration-out="100" id="tabs-fragile" style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="tabs-fragile w-tabs">
+          <div data-duration-in="300" data-duration-out="100" id="tabs-fragile"
+            style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+            class="tabs-fragile w-tabs">
             <div class="tabs-menu-2 w-tab-menu">
-              <a data-w-tab="Tab 4" data-w-id="20bbe0f9-530f-863a-014f-9ee7b709eb40" class="tab-link-fragile w-inline-block w-tab-link"><img src="images/FragileContexts-Copy.png" loading="lazy" width="164" height="180" data-w-id="20bbe0f9-530f-863a-014f-9ee7b709eb41" alt="" class="image-16"></a>
+              <a data-w-tab="Tab 4" data-w-id="20bbe0f9-530f-863a-014f-9ee7b709eb40"
+                class="tab-link-fragile w-inline-block w-tab-link"><img src="images/FragileContexts-Copy.png"
+                  loading="lazy" width="164" height="180" data-w-id="20bbe0f9-530f-863a-014f-9ee7b709eb41" alt=""
+                  class="image-16"></a>
             </div>
             <div class="tabs-content-2 w-tab-content">
               <div data-w-tab="Tab 4" class="w-tab-pane">
                 <div class="ss-wrapper">
-                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500" data-infinite="1" id="slider-fragile" class="slider w-slider">
+                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500"
+                    data-infinite="1" id="slider-fragile" class="slider w-slider">
                     <div class="mask w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">FACILITATING PPD IN FRAGILE CONTEXTS - Liberia </h4><img src="images/card-Fragile-Contexts.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">FACILITATING PPD IN FRAGILE CONTEXTS - Liberia </h4><img
+                              src="images/card-Fragile-Contexts.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Francois Kacen</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -414,8 +595,10 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h2>Facilitating PPD in Fragile Contexts</h2>
-                            <p>Yet, practitioners have identified common constraints deteriorating the business environment  in FCAS and discouraging much-needed investment: </p>
-                            <p>Higher informality of the private sector originating from poor regulation capacity of the governments and weak access to finance;</p>
+                            <p>Yet, practitioners have identified common constraints deteriorating the business
+                              environment  in FCAS and discouraging much-needed investment: </p>
+                            <p>Higher informality of the private sector originating from poor regulation capacity of the
+                              governments and weak access to finance;</p>
                             <p>Access to land problems; </p>
                             <p>Political instability, unpredictability and security issues; </p>
                             <p>Weak private sector technical and managerial capacity; </p>
@@ -428,7 +611,8 @@ pointer-events:none
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Mission RCA Julien Ayme</h4><img src="images/card-MR-Benin.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Mission RCA Julien Ayme</h4><img src="images/card-MR-Benin.png"
+                              loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: Description max two lines:</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">read the report</div>
@@ -448,14 +632,16 @@ pointer-events:none
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Identify and prioritize business environment reforms...</h4><img src="images/card-MR-Benin.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Identify and prioritize business environment reforms...</h4>
+                            <img src="images/card-MR-Benin.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Francois Kacen</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">read the report</div>
                             </div>
                           </a>
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">InfoPoint François Liberia</h4><img src="images/card-MR-Benin.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">InfoPoint François Liberia</h4><img
+                              src="images/card-MR-Benin.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Francois Kacen</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -477,8 +663,12 @@ pointer-events:none
             </div>
           </div>
           <div id="next" class="nextsection">
-            <a href="#COVID-times" data-w-id="2ece8ba1-4b06-79e2-ae25-bef04a16f028" class="link-block-sop w-inline-block">
-              <div data-w-id="2ece8ba1-4b06-79e2-ae25-bef04a16f029" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
+            <a href="#COVID-times" data-w-id="2ece8ba1-4b06-79e2-ae25-bef04a16f028"
+              class="link-block-sop w-inline-block">
+              <div data-w-id="2ece8ba1-4b06-79e2-ae25-bef04a16f029" data-animation-type="lottie"
+                data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json"
+                data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
             </a>
             <div class="lottie-4">Next: Facilitating PPD in COVID-19 Times</div>
           </div>
@@ -488,21 +678,29 @@ pointer-events:none
         <div class="section__inner-wrap">
           <div style="opacity:0" class="div-block-2">
             <h1 class="heading"><span class="number">04</span> facilitating ppd in covid-19 times</h1>
-            <blockquote class="block-quote-covid">The coronavirus pandemic that started late 2019 / early 2020 and the restrictive measures taken all over the world to reduce the spread of the virus have had dramatic impact on our global economies, and inparticular on those of developing countries. </blockquote>
+            <blockquote class="block-quote-covid">The coronavirus pandemic that started late 2019 / early 2020 and the
+              restrictive measures taken all over the world to reduce the spread of the virus have had dramatic impact
+              on our global economies, and inparticular on those of developing countries. </blockquote>
           </div>
-          <div data-duration-in="300" data-duration-out="100" id="tabs-covidtimes" style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="tabs-covidtimes w-tabs">
+          <div data-duration-in="300" data-duration-out="100" id="tabs-covidtimes"
+            style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+            class="tabs-covidtimes w-tabs">
             <div class="tabs-menu-covid w-tab-menu">
-              <a data-w-tab="Tab 4" id="FlytoCovid" data-w-id="c43d2434-cb89-e502-9adb-be0e6e2a149f" class="tab-link-covid w-inline-block w-tab-link w--current"><img src="images/COVIDTIMES.png" loading="lazy" id="covid" alt="" class="image-15"></a>
+              <a data-w-tab="Tab 4" id="FlytoCovid" data-w-id="c43d2434-cb89-e502-9adb-be0e6e2a149f"
+                class="tab-link-covid w-inline-block w-tab-link w--current"><img src="images/COVIDTIMES.png"
+                  loading="lazy" id="covid" alt="" class="image-15"></a>
             </div>
             <div class="tabs-content-3 w-tab-content">
               <div data-w-tab="Tab 4" class="w-tab-pane w--tab-active">
                 <div class="ss-wrapper">
-                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500" data-infinite="1" id="slider-covid" class="slider w-slider">
+                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500"
+                    data-infinite="1" id="slider-covid" class="slider w-slider">
                     <div class="mask w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">PSE in COVID times -EU Thematic Brief</h4><img src="images/card-covid.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">PSE in COVID times -EU Thematic Brief</h4><img
+                              src="images/card-covid.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">This document covers the issues related to etc etc</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">read the document</div>
@@ -510,14 +708,18 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h2>Facilitating PPD in Covid-19 Times</h2>
-                            <p>The private sector can bring valuable contributions to address the sanitary and socio-economic impact of the outbreak, and governments and development partners should more than ever actively look for ways to diminish the impact of the crisis on businesses and job losses, and pave the way to a quicker and sustainable economy recovery. </p>
+                            <p>The private sector can bring valuable contributions to address the sanitary and
+                              socio-economic impact of the outbreak, and governments and development partners should
+                              more than ever actively look for ways to diminish the impact of the crisis on businesses
+                              and job losses, and pave the way to a quicker and sustainable economy recovery. </p>
                           </div>
                         </div>
                       </div>
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Missions François (Mada, Benin)</h4><img src="images/card-MR-Benin-Copy.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Missions François (Mada, Benin)</h4><img
+                              src="images/card-MR-Benin-Copy.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: Description max two lines:</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">read the report</div>
@@ -525,7 +727,12 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h2>Facilitating PPD in Covid-19 Times</h2>
-                            <p>Supporting PPD for Business Environment Reform is considered as a useful tool allowing Governments and development partners to assess the impact of the COVID19 epidemic on the economy, but also as a necessity to adopt the much-needed emergency measures to support businesses operations continuity. PPD is a key element to cope with the current situation. Special attention should be given to identify and address the informal sector’s constraints. </p>
+                            <p>Supporting PPD for Business Environment Reform is considered as a useful tool allowing
+                              Governments and development partners to assess the impact of the COVID19 epidemic on the
+                              economy, but also as a necessity to adopt the much-needed emergency measures to support
+                              businesses operations continuity. PPD is a key element to cope with the current situation.
+                              Special attention should be given to identify and address the informal sector’s
+                              constraints. </p>
                             <p>identify and address the informal sector’s constraints.</p>
                           </div>
                         </div>
@@ -544,8 +751,12 @@ pointer-events:none
             </div>
           </div>
           <div id="next" class="nextsection">
-            <a href="#mapping-stakeholders" data-w-id="232b3032-6adf-9b5c-d03e-cd7384943881" class="link-block-sop w-inline-block">
-              <div data-w-id="232b3032-6adf-9b5c-d03e-cd7384943882" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
+            <a href="#mapping-stakeholders" data-w-id="232b3032-6adf-9b5c-d03e-cd7384943881"
+              class="link-block-sop w-inline-block">
+              <div data-w-id="232b3032-6adf-9b5c-d03e-cd7384943882" data-animation-type="lottie"
+                data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json"
+                data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
             </a>
             <div class="lottie-4">Next: Mapping Stakeholders</div>
           </div>
@@ -555,22 +766,32 @@ pointer-events:none
         <div class="section__inner-wrap">
           <div style="opacity:0" class="div-block-2">
             <h1 class="heading"><span class="number">05</span> mapping stakeholders</h1>
-            <blockquote class="block-quote-mapping">Mapping of the local businesses is a first step towards any structured dialogue with the private sector.</blockquote>
+            <blockquote class="block-quote-mapping">Mapping of the local businesses is a first step towards any
+              structured dialogue with the private sector.</blockquote>
           </div>
-          <div data-duration-in="300" data-duration-out="100" id="tabs-mapping" style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="tabs-mapping w-tabs">
+          <div data-duration-in="300" data-duration-out="100" id="tabs-mapping"
+            style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+            class="tabs-mapping w-tabs">
             <div class="tabs-menu-mapping w-tab-menu">
-              <a data-w-tab="Tab 4" id="FlytoGhana" data-w-id="08307c08-199d-846a-59ea-7f76307514bf" class="tab-link-mapping w-inline-block w-tab-link w--current"><img src="images/MAPPINGSTAKEHOLDERS.png" loading="lazy" alt="" class="image-17"></a>
+              <a data-w-tab="Tab 4" id="FlytoGhana" data-w-id="08307c08-199d-846a-59ea-7f76307514bf"
+                class="tab-link-mapping w-inline-block w-tab-link w--current"><img src="images/MAPPINGSTAKEHOLDERS.png"
+                  loading="lazy" alt="" class="image-17"></a>
             </div>
             <div class="tab-content-mapping w-tab-content">
               <div data-w-tab="Tab 4" class="w-tab-pane w--tab-active">
                 <div class="ss-wrapper">
-                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500" data-infinite="1" id="slider-mapping" class="slider w-slider">
+                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500"
+                    data-infinite="1" id="slider-mapping" class="slider w-slider">
                     <div class="mask w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
-                          <a data-w-id="08307c08-199d-846a-59ea-7f76307514c8" style="opacity:0;-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Mapping European business  in Ghana</h4><img loading="lazy" src="images/newthumbtest.png" alt="" class="image-10">
-                            <p data-w-id="76cf0c3e-459a-995d-fe8c-19a282387997" class="bake72__summary">Ines Escudero<br>Trade Expert, TPSD Facility</p>
+                          <a data-w-id="08307c08-199d-846a-59ea-7f76307514c8"
+                            style="opacity:0;-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            href="#" class="bake72 w-inline-block">
+                            <h4 class="media_card_title">Mapping European business  in Ghana</h4><img loading="lazy"
+                              src="images/newthumbtest.png" alt="" class="image-10">
+                            <p data-w-id="76cf0c3e-459a-995d-fe8c-19a282387997" class="bake72__summary">Ines
+                              Escudero<br>Trade Expert, TPSD Facility</p>
                             <div id="sym-link" style="width:225PX;height:6PX" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
                             </div>
@@ -578,7 +799,12 @@ pointer-events:none
                           <div class="rte w-richtext">
                             <h2>Mapping Stakeholders</h2>
                             <p>Mappings allow to : </p>
-                            <p>Identify the key actors in a given country and/or sector, determine how they interact with development and governance processes and understand their dynamics; Use an evolutive approach taking into consideration the respective roles and positions of these actors, as well as their interactions with other actors and their objectives, strengths and weaknesses in order to eventually strengthen their capacity as partners in development or involve them in policy dialogue at national and sectoral levels.</p>
+                            <p>Identify the key actors in a given country and/or sector, determine how they interact
+                              with development and governance processes and understand their dynamics; Use an evolutive
+                              approach taking into consideration the respective roles and positions of these actors, as
+                              well as their interactions with other actors and their objectives, strengths and
+                              weaknesses in order to eventually strengthen their capacity as partners in development or
+                              involve them in policy dialogue at national and sectoral levels.</p>
                             <p><br></p>
                             <p><br></p>
                             <p> </p>
@@ -588,23 +814,31 @@ pointer-events:none
                       </div>
                       <div class="w-slide">
                         <div class="card-nov">
-                          <a data-w-id="77aca6ec-07b4-d633-8348-8ef8813012bc" href="#" class="bake72 link-block-9-copy w-inline-block">
-                            <h4 class="media_card_title">Le climat d&#x27;investissement  au Cameroun</h4><img loading="lazy" src="images/card-Cam-Yannis.png" alt="" class="image-10">
-                            <p data-w-id="9968e6ac-d697-63ec-f3c7-cf9bcd912062" class="bake72__summary">Yanis Arnopoulos, <br>Directeur général adjoint, <br>Groupe Arno</p>
+                          <a data-w-id="77aca6ec-07b4-d633-8348-8ef8813012bc" href="#"
+                            class="bake72 link-block-9-copy w-inline-block">
+                            <h4 class="media_card_title">Le climat d&#x27;investissement  au Cameroun</h4><img
+                              loading="lazy" src="images/card-Cam-Yannis.png" alt="" class="image-10">
+                            <p data-w-id="9968e6ac-d697-63ec-f3c7-cf9bcd912062" class="bake72__summary">Yanis
+                              Arnopoulos, <br>Directeur général adjoint, <br>Groupe Arno</p>
                             <div id="sym-link" style="width:225PX;height:6PX" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
                             </div>
                           </a>
-                          <a id="cameroon-1" data-w-id="08307c08-199d-846a-59ea-7f76307514de" style="opacity:0;-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Supporting the creation of the  EBO in Cameroon</h4><img loading="lazy" src="images/card-Cam-Fillipo.png" alt="" class="image-10">
-                            <p data-w-id="052b9b05-cc48-fad9-c543-e5355abe79cc" class="bake72__summary">Filippo Amato, <br>Head of Trade section, <br>EU Delegation to Cameroon</p>
+                          <a id="cameroon-1" data-w-id="08307c08-199d-846a-59ea-7f76307514de"
+                            style="opacity:0;-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                            href="#" class="bake72 w-inline-block">
+                            <h4 class="media_card_title">Supporting the creation of the  EBO in Cameroon</h4><img
+                              loading="lazy" src="images/card-Cam-Fillipo.png" alt="" class="image-10">
+                            <p data-w-id="052b9b05-cc48-fad9-c543-e5355abe79cc" class="bake72__summary">Filippo Amato,
+                              <br>Head of Trade section, <br>EU Delegation to Cameroon</p>
                             <div id="sym-link" style="width:225PX;height:6PX" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
                             </div>
                           </a>
                           <div class="rte w-richtext">
                             <h2>Mapping Stakeholders</h2>
-                            <p>When conducted by EU Delegations, PS Mappings allow to obtain a thorough understanding of the private sector presence in the country, and to recommend actions accordingly.</p>
+                            <p>When conducted by EU Delegations, PS Mappings allow to obtain a thorough understanding of
+                              the private sector presence in the country, and to recommend actions accordingly.</p>
                             <p>‍</p>
                           </div>
                         </div>
@@ -612,14 +846,16 @@ pointer-events:none
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Leaflets and brochure EU PS mapping</h4><img src="images/card-default.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Leaflets and brochure EU PS mapping</h4><img
+                              src="images/card-default.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: Description max two lines:</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">read the document</div>
                             </div>
                           </a>
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Mission in Benin (2018) and Mission in Rwanda (2019)</h4><img src="images/card-default.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Mission in Benin (2018) and Mission in Rwanda (2019)</h4><img
+                              src="images/card-default.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: Description max two lines:</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">read the document</div>
@@ -641,8 +877,12 @@ pointer-events:none
             </div>
           </div>
           <div id="next" class="nextsection">
-            <a href="#supporting-inclusivity" data-w-id="d22b6686-df22-6e9b-cc69-516ae984ef62" class="link-block-sop w-inline-block">
-              <div data-w-id="d22b6686-df22-6e9b-cc69-516ae984ef63" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
+            <a href="#supporting-inclusivity" data-w-id="d22b6686-df22-6e9b-cc69-516ae984ef62"
+              class="link-block-sop w-inline-block">
+              <div data-w-id="d22b6686-df22-6e9b-cc69-516ae984ef63" data-animation-type="lottie"
+                data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json"
+                data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
             </a>
             <div class="lottie-4">Next: Supporting Inclusivity</div>
           </div>
@@ -652,12 +892,27 @@ pointer-events:none
         <div class="section__inner-wrap">
           <div style="opacity:0" class="div-block-2">
             <h1 class="heading"><span class="number">06</span> supporting inclusivity</h1>
-            <blockquote class="block-quote-include">Private sector is diverse, and public-private consultations should reflect this granularity. Marginalised groups such as women entrepreneurs, youth entrepreneurs and the informal sector, account form major parts of economic activities but are frequently unorganised and under-represented in PPDs. Some businesses have a greater capacity to represent themselves within these processes than others: large, urban, formal sector, male-managed firms have more important financial and organisational capacity to participate than smaller, rural, informal, and women-owned firms. Grassroot organisations are often neglected as well in talks related to the business environment reforms. Letting them participate to PPD is challenging as these have weak organisational structure, are likely to be unable to institutionalise knowledge, and their financial sustainability is low since their members are informal enterprises. </blockquote>
+            <blockquote class="block-quote-include">Private sector is diverse, and public-private consultations should
+              reflect this granularity. Marginalised groups such as women entrepreneurs, youth entrepreneurs and the
+              informal sector, account form major parts of economic activities but are frequently unorganised and
+              under-represented in PPDs. Some businesses have a greater capacity to represent themselves within these
+              processes than others: large, urban, formal sector, male-managed firms have more important financial and
+              organisational capacity to participate than smaller, rural, informal, and women-owned firms. Grassroot
+              organisations are often neglected as well in talks related to the business environment reforms. Letting
+              them participate to PPD is challenging as these have weak organisational structure, are likely to be
+              unable to institutionalise knowledge, and their financial sustainability is low since their members are
+              informal enterprises. </blockquote>
           </div>
-          <div data-duration-in="300" data-duration-out="100" id="tabs-inclusivity" style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="tabs-inclusivity w-tabs">
+          <div data-duration-in="300" data-duration-out="100" id="tabs-inclusivity"
+            style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+            class="tabs-inclusivity w-tabs">
             <div class="tabs-menu-inclusion w-tab-menu">
-              <a data-w-tab="Tab 1" data-w-id="2d77564a-ed3a-f290-4943-6ceb7e969b25" class="tab-link-women w-inline-block w-tab-link w--current"><img src="images/INCLUDING-WOMEN.png" loading="lazy" alt="" class="img-women"></a>
-              <a data-w-tab="Tab 2" data-w-id="2d77564a-ed3a-f290-4943-6ceb7e969b27" class="tab-link-informal w-inline-block w-tab-link"><img src="images/INFORMALSECTOR.png" loading="lazy" alt="" class="img-informal"></a>
+              <a data-w-tab="Tab 1" data-w-id="2d77564a-ed3a-f290-4943-6ceb7e969b25"
+                class="tab-link-women w-inline-block w-tab-link w--current"><img src="images/INCLUDING-WOMEN.png"
+                  loading="lazy" alt="" class="img-women"></a>
+              <a data-w-tab="Tab 2" data-w-id="2d77564a-ed3a-f290-4943-6ceb7e969b27"
+                class="tab-link-informal w-inline-block w-tab-link"><img src="images/INFORMALSECTOR.png" loading="lazy"
+                  alt="" class="img-informal"></a>
             </div>
             <div class="tabs-content-4 w-tab-content">
               <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
@@ -665,10 +920,14 @@ pointer-events:none
                   <div class="card-fill"></div>
                   <div class="rte w-richtext">
                     <h2>Including Women</h2>
-                    <p>Empowering women entrepreneurs to identify the constrains they face in their business life and supporting them to constructively participate to PPD is key to correct gender inequalities affecting the private sector. </p>
+                    <p>Empowering women entrepreneurs to identify the constrains they face in their business life and
+                      supporting them to constructively participate to PPD is key to correct gender inequalities
+                      affecting the private sector. </p>
                     <p>Integrating a gender perspective into PPDs can occur at two levels:</p>
-                    <p>At policy and action level, a gender lens can be applied to a PPD’s outputs and outcomes, whether these are about legal or regulatory reform or about undertaking a specific set of actions; </p>
-                    <p>At PPD implementation level, applying a gender lens aims to ensure that women are equally represented in the dialogue process.  </p>
+                    <p>At policy and action level, a gender lens can be applied to a PPD’s outputs and outcomes, whether
+                      these are about legal or regulatory reform or about undertaking a specific set of actions; </p>
+                    <p>At PPD implementation level, applying a gender lens aims to ensure that women are equally
+                      represented in the dialogue process.  </p>
                     <p>‍</p>
                   </div>
                 </div>
@@ -678,10 +937,17 @@ pointer-events:none
                   <div class="card-fill"></div>
                   <div class="rte w-richtext">
                     <h2>Including Informal Sector</h2>
-                    <p>In developing countries, where the informal sector is dominant, it is crucial that small, micro and informal entrepreneurs participate to public-private consultations, and their capacities should be built to allow them to express their interests in a coherent and analytical manner. Informal worker associations do exist in some countries and represent sectors such as petty traders and small street vendors.  </p>
-                    <p>According to the OECD, two types of interventions should be implemented to support MSMEs and informal sector to participate to BER: </p>
-                    <p>supporting the establishment of intermediary organisations representing micro and informal enterprises and stimulating linkages and cooperation between them; </p>
-                    <p>encouraging existing private sector organisations to become more representative and strengthening their understanding of micro and informal enterprises’ constraints.</p>
+                    <p>In developing countries, where the informal sector is dominant, it is crucial that small, micro
+                      and informal entrepreneurs participate to public-private consultations, and their capacities
+                      should be built to allow them to express their interests in a coherent and analytical manner.
+                      Informal worker associations do exist in some countries and represent sectors such as petty
+                      traders and small street vendors.  </p>
+                    <p>According to the OECD, two types of interventions should be implemented to support MSMEs and
+                      informal sector to participate to BER: </p>
+                    <p>supporting the establishment of intermediary organisations representing micro and informal
+                      enterprises and stimulating linkages and cooperation between them; </p>
+                    <p>encouraging existing private sector organisations to become more representative and strengthening
+                      their understanding of micro and informal enterprises’ constraints.</p>
                     <p>‍</p>
                   </div>
                 </div>
@@ -689,8 +955,12 @@ pointer-events:none
             </div>
           </div>
           <div id="next" class="nextsection">
-            <a href="#monitoring-evaluation" data-w-id="c854217e-d681-4c00-6717-ac7bb52e828a" class="link-block-sop w-inline-block">
-              <div data-w-id="c854217e-d681-4c00-6717-ac7bb52e828b" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
+            <a href="#monitoring-evaluation" data-w-id="c854217e-d681-4c00-6717-ac7bb52e828a"
+              class="link-block-sop w-inline-block">
+              <div data-w-id="c854217e-d681-4c00-6717-ac7bb52e828b" data-animation-type="lottie"
+                data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json"
+                data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
             </a>
             <div class="lottie-4">Next: Monitoring &amp; Evaluation</div>
           </div>
@@ -700,17 +970,26 @@ pointer-events:none
         <div class="section__inner-wrap">
           <div style="opacity:0" class="div-block-2">
             <h1 class="heading"><span class="number">07</span> monitoring &amp; evaluation</h1>
-            <blockquote class="block-quote-monitor">According to the PPD Charter, Monitoring &amp; Evaluation (M&amp;E)  is an effective tool to manage the public-private dialogue process and to demonstrate its purpose and performance. The advantages of monitoring and evaluation are numerous: M&amp;E techniques improve overall planning of PPDs, facilitate advocacy, and increase incentives to promote more effective implementation. </blockquote>
+            <blockquote class="block-quote-monitor">According to the PPD Charter, Monitoring &amp; Evaluation (M&amp;E)
+               is an effective tool to manage the public-private dialogue process and to demonstrate its purpose and
+              performance. The advantages of monitoring and evaluation are numerous: M&amp;E techniques improve overall
+              planning of PPDs, facilitate advocacy, and increase incentives to promote more effective implementation.
+            </blockquote>
           </div>
-          <div data-duration-in="300" data-duration-out="100" id="tabs-monitoring" style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="tabs-monitoring w-tabs">
+          <div data-duration-in="300" data-duration-out="100" id="tabs-monitoring"
+            style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+            class="tabs-monitoring w-tabs">
             <div class="tabs-menu-monitor w-tab-menu">
-              <a data-w-tab="Tab 1" data-w-id="e5ec4845-8b47-21b4-f716-108e71b2cc6c" class="tab-link-monitor w-inline-block w-tab-link"><img src="images/MONITORING--EVALUATION.png" loading="lazy" alt="" class="img-monitor"></a>
+              <a data-w-tab="Tab 1" data-w-id="e5ec4845-8b47-21b4-f716-108e71b2cc6c"
+                class="tab-link-monitor w-inline-block w-tab-link"><img src="images/MONITORING--EVALUATION.png"
+                  loading="lazy" alt="" class="img-monitor"></a>
             </div>
             <div class="tabs-content-5 w-tab-content">
               <div data-w-tab="Tab 1" class="w-tab-pane">
                 <div class="card-nov">
                   <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                    <h4 class="media_card_title"> Paper François (once validated)</h4><img src="images/card-default.png" loading="lazy" alt="" class="image-10">
+                    <h4 class="media_card_title"> Paper François (once validated)</h4><img src="images/card-default.png"
+                      loading="lazy" alt="" class="image-10">
                     <p class="bake72__summary">Description max two lines: Description max two lines:</p>
                     <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                       <div class="bake72__button__text">read the document</div>
@@ -718,10 +997,15 @@ pointer-events:none
                   </a>
                   <div class="rte w-richtext">
                     <h2>Monitoring &amp; Evaluation</h2>
-                    <p>M&amp;E mechanisms should remain simple and flexible in order to serve as a tool to promote transparency and accountability. A participatory approach is considered as a best practice to implement M&amp;E of PPDs, and all stakeholders should be involved. </p>
-                    <p>M&amp;E should not only cover enactment of reforms, but also scrutinize their implementation after adoption. </p>
-                    <p>Finally, targeted inputs, outputs, outcomes and impacts should be defined with specific indicators and reviewed periodically by PPD stakeholders.</p>
-                    <p>The objective is to identify a methodology based on international practice and adapt it to the needs of SB4A.  </p>
+                    <p>M&amp;E mechanisms should remain simple and flexible in order to serve as a tool to promote
+                      transparency and accountability. A participatory approach is considered as a best practice to
+                      implement M&amp;E of PPDs, and all stakeholders should be involved. </p>
+                    <p>M&amp;E should not only cover enactment of reforms, but also scrutinize their implementation
+                      after adoption. </p>
+                    <p>Finally, targeted inputs, outputs, outcomes and impacts should be defined with specific
+                      indicators and reviewed periodically by PPD stakeholders.</p>
+                    <p>The objective is to identify a methodology based on international practice and adapt it to the
+                      needs of SB4A.  </p>
                     <p>‍</p>
                     <p>‍</p>
                   </div>
@@ -730,8 +1014,12 @@ pointer-events:none
             </div>
           </div>
           <div id="next" class="nextsection">
-            <a href="#policybackground" data-w-id="84752fcd-0295-1f5a-156e-260006cd516c" class="link-block-sop w-inline-block">
-              <div data-w-id="84752fcd-0295-1f5a-156e-260006cd516d" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
+            <a href="#policybackground" data-w-id="84752fcd-0295-1f5a-156e-260006cd516c"
+              class="link-block-sop w-inline-block">
+              <div data-w-id="84752fcd-0295-1f5a-156e-260006cd516d" data-animation-type="lottie"
+                data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json"
+                data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
             </a>
             <div class="lottie-4">Next: Policy Background</div>
           </div>
@@ -741,23 +1029,35 @@ pointer-events:none
         <div class="section__inner-wrap">
           <div data-w-id="828ed268-4c42-c0dc-ad76-53110e0642f6" style="opacity:0" class="div-block-2">
             <h1 class="heading"><span class="number">08</span> policy background</h1>
-            <blockquote class="block-policy">The approaches and policies involved with the SB4A have evolved through the experiences among and dialogue between key actors from the public and private sectors. Lets examine the background of the key policies and developments that have shaped the SB4A agenda.</blockquote>
+            <blockquote class="block-policy">The approaches and policies involved with the SB4A have evolved through the
+              experiences among and dialogue between key actors from the public and private sectors. Lets examine the
+              background of the key policies and developments that have shaped the SB4A agenda.</blockquote>
           </div>
-          <div data-duration-in="1000" data-duration-out="500" id="tabs-policy" style="-webkit-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="tabs-policy w-tabs">
+          <div data-duration-in="1000" data-duration-out="500" id="tabs-policy"
+            style="-webkit-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+            class="tabs-policy w-tabs">
             <div class="tabs-menu-policy w-tab-menu">
-              <a data-w-tab="2014" data-w-id="3229e98e-bdfa-3777-4a2e-4cfc53a34e39" class="tab-link-pol2014 w-inline-block w-tab-link"><img src="images/POLICY-2014.png" loading="lazy" alt="" class="img2014pol"></a>
-              <a data-w-tab="2017" data-w-id="3229e98e-bdfa-3777-4a2e-4cfc53a34e3b" class="tab-lin-pol2017 w-inline-block w-tab-link"><img src="images/POLICY-2017.png" loading="lazy" alt="" class="img-2017pol"></a>
-              <a data-w-tab="2018" data-w-id="3229e98e-bdfa-3777-4a2e-4cfc53a34e3d" class="tab-link-pol2018 w-inline-block w-tab-link w--current"><img src="images/POLICY-2018.png" loading="lazy" alt="" class="img-2018pol"></a>
+              <a data-w-tab="2014" data-w-id="3229e98e-bdfa-3777-4a2e-4cfc53a34e39"
+                class="tab-link-pol2014 w-inline-block w-tab-link"><img src="images/POLICY-2014.png" loading="lazy"
+                  alt="" class="img2014pol"></a>
+              <a data-w-tab="2017" data-w-id="3229e98e-bdfa-3777-4a2e-4cfc53a34e3b"
+                class="tab-lin-pol2017 w-inline-block w-tab-link"><img src="images/POLICY-2017.png" loading="lazy"
+                  alt="" class="img-2017pol"></a>
+              <a data-w-tab="2018" data-w-id="3229e98e-bdfa-3777-4a2e-4cfc53a34e3d"
+                class="tab-link-pol2018 w-inline-block w-tab-link w--current"><img src="images/POLICY-2018.png"
+                  loading="lazy" alt="" class="img-2018pol"></a>
             </div>
             <div class="tabs-content-policy w-tab-content">
               <div data-w-tab="2014" class="tab-pane-tab-1 w-tab-pane">
                 <div class="ss-wrapper">
-                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1" id="slider-pol2014" class="slider w-slider">
+                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1"
+                    id="slider-pol2014" class="slider w-slider">
                     <div class="mask-2 w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Video Interview Antti Kharunen</h4><img src="images/card-antii.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Video Interview Antti Kharunen</h4><img
+                              src="images/card-antii.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Video Interview Antti Kharunen</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -765,14 +1065,19 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h3>2014 Communication on Private Sector &amp; SB4A</h3>
-                            <p>In 2014, the EC communication ‘<em>A Stronger Role of the Private Sector in AchievingInclusive and Sustainable Growth in Developing Countries’</em> recognised the private sector as a key partner to create jobs, contribute to poverty alleviation, support innovation and technology transfer, and bring financial resources into partner countries. </p>
+                            <p>In 2014, the EC communication ‘<em>A Stronger Role of the Private Sector in
+                                AchievingInclusive and Sustainable Growth in Developing Countries’</em> recognised the
+                              private sector as a key partner to create jobs, contribute to poverty alleviation, support
+                              innovation and technology transfer, and bring financial resources into partner countries.
+                            </p>
                           </div>
                         </div>
                       </div>
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Video Interview Antti Kharunen</h4><img src="images/card-antii.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Video Interview Antti Kharunen</h4><img
+                              src="images/card-antii.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Video Interview Antti Kharunen</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -780,7 +1085,12 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h3>2014 Communication on Private Sector &amp; SB4A</h3>
-                            <p>‘The EC will look for new ways of harnessing the potential of the private sector as a financing partner, implementing agent, advisor or intermediary to achieve more effective and efficient delivery of EU support, not only in the field of local private sector development, but also in other areas of EU development cooperation such as sustainable energy, sustainable agriculture and agribusiness, digital and physical infrastructure ,and the green and social sectors&quot;</p>
+                            <p>‘The EC will look for new ways of harnessing the potential of the private sector as a
+                              financing partner, implementing agent, advisor or intermediary to achieve more effective
+                              and efficient delivery of EU support, not only in the field of local private sector
+                              development, but also in other areas of EU development cooperation such as sustainable
+                              energy, sustainable agriculture and agribusiness, digital and physical infrastructure ,and
+                              the green and social sectors&quot;</p>
                             <p><br></p>
                           </div>
                         </div>
@@ -788,7 +1098,8 @@ pointer-events:none
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Video Interview Antti Kharunen</h4><img src="images/card-antii.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Video Interview Antti Kharunen</h4><img
+                              src="images/card-antii.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Video Interview Antti Kharunen</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -796,7 +1107,13 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h3>2014 Communication on Private Sector &amp; SB4A</h3>
-                            <p>In that same Communication, the EC foresees that EU Delegations will play an active role in enabling inclusive public-private policy dialogue by “supporting the functioning of existing or new dialogue mechanisms such as national employment, labour or export councils, and by targeting capacity building to private sector representatives, including chambers of commerce, social partners, and organizations representing micro, small and medium-sized enterprises, female entrepreneurs, and firms and workers in the informal sector, to improve their contribution to such dialogue mechanisms”.</p>
+                            <p>In that same Communication, the EC foresees that EU Delegations will play an active role
+                              in enabling inclusive public-private policy dialogue by “supporting the functioning of
+                              existing or new dialogue mechanisms such as national employment, labour or export
+                              councils, and by targeting capacity building to private sector representatives, including
+                              chambers of commerce, social partners, and organizations representing micro, small and
+                              medium-sized enterprises, female entrepreneurs, and firms and workers in the informal
+                              sector, to improve their contribution to such dialogue mechanisms”.</p>
                             <p>‍</p>
                             <p>‍</p>
                             <p><br></p>
@@ -806,7 +1123,8 @@ pointer-events:none
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Video Interview Antti Kharunen</h4><img src="images/card-antii.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Video Interview Antti Kharunen</h4><img
+                              src="images/card-antii.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Video Interview Antti Kharunen</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -814,7 +1132,10 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h3>2014 Communication on Private Sector &amp; SB4A</h3>
-                            <p>In the context of the SB4A Platform, EU Delegations have a central role to play, using structured dialogue with the private sector and other stakeholders to support consultation and investment climate improvement in sectors identified as engines for inclusive growth and employment creation.</p>
+                            <p>In the context of the SB4A Platform, EU Delegations have a central role to play, using
+                              structured dialogue with the private sector and other stakeholders to support consultation
+                              and investment climate improvement in sectors identified as engines for inclusive growth
+                              and employment creation.</p>
                             <p>‍</p>
                             <p>‍</p>
                             <p><br></p>
@@ -834,12 +1155,14 @@ pointer-events:none
               </div>
               <div data-w-tab="2017" class="w-tab-pane">
                 <div class="ss-wrapper">
-                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1" id="slider-pol2017" class="slider w-slider">
+                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1"
+                    id="slider-pol2017" class="slider w-slider">
                     <div class="mask-2 w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">The EIP in Practice - The Investment Climate Pillar</h4><img src="images/card-EIP1.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">The EIP in Practice - The Investment Climate Pillar</h4><img
+                              src="images/card-EIP1.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: PPD in practice with Uganda</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -847,15 +1170,20 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h3>2017 : The External Investment Plan and SB4A</h3>
-                            <p>In 2017, the European Union adopted the European Investment Plan (EIP) to remove constraints to private investment in partner country markets and to support priority reforms. </p>
-                            <p>The EIP provides a comprehensive and integrated approach, linking investment mobilization (pillar 1) with technical assistance (pillar 2) and investment climate improvement (pillar 3)</p>
+                            <p>In 2017, the European Union adopted the European Investment Plan (EIP) to remove
+                              constraints to private investment in partner country markets and to support priority
+                              reforms. </p>
+                            <p>The EIP provides a comprehensive and integrated approach, linking investment mobilization
+                              (pillar 1) with technical assistance (pillar 2) and investment climate improvement (pillar
+                              3)</p>
                           </div>
                         </div>
                       </div>
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Three Building Blocks of the EIP</h4><img src="images/card-default.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Three Building Blocks of the EIP</h4><img
+                              src="images/card-default.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: Description max two lines:</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -864,10 +1192,17 @@ pointer-events:none
                           <div class="rte w-richtext">
                             <h3>2017 : The External Investment Plan and SB4A</h3>
                             <p>Three building blocks compose Pilar 3 and are closely interlinked: </p>
-                            <p>1) investment climate analysis, enhancing market intelligence with evidence-based data and country analysis,  and identification of investment opportunities in key sectors and value chains – Jobs and Growth Compacts; </p>
-                            <p>2) engaging in structured public-private dialogue, with private sector engagement and structured dialogue for perspective on investment climate and business constraints – SB4A; </p>
-                            <p>3) interventions to support priority reforms, capacity building of public and private sector, value addition and entrepreneurship, to address investors’ perceived risks </p>
-                            <p>SB4A is a key element of the External investment Plan. The facilitation of structured public-private dialogue is one of the building blocks of the EIP’s Investment clime pilar(Pilar 3). </p>
+                            <p>1) investment climate analysis, enhancing market intelligence with evidence-based data
+                              and country analysis,  and identification of investment opportunities in key sectors and
+                              value chains – Jobs and Growth Compacts; </p>
+                            <p>2) engaging in structured public-private dialogue, with private sector engagement and
+                              structured dialogue for perspective on investment climate and business constraints – SB4A;
+                            </p>
+                            <p>3) interventions to support priority reforms, capacity building of public and private
+                              sector, value addition and entrepreneurship, to address investors’ perceived risks </p>
+                            <p>SB4A is a key element of the External investment Plan. The facilitation of structured
+                              public-private dialogue is one of the building blocks of the EIP’s Investment clime
+                              pilar(Pilar 3). </p>
                             <p><br></p>
                             <p>‍</p>
                             <p>‍</p>
@@ -888,14 +1223,18 @@ pointer-events:none
               </div>
               <div data-w-tab="2018" class="w-tab-pane w--tab-active">
                 <div class="ss-wrapper">
-                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1" id="slider-pol2018" class="slider w-slider">
+                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1"
+                    id="slider-pol2018" class="slider w-slider">
                     <div class="mask-2 w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
                           <div class="card-fill"></div>
                           <div class="rte w-richtext">
                             <h3>2018 : EU-Africa Alliance and SB4A</h3>
-                            <p>An improved public-private dialogue is as also a key element of the 2018 Africa-Europe Alliance Communication which focuses on sustained support to policy reforms improving business environment, capacity building and technical assistance to African institutions.</p>
+                            <p>An improved public-private dialogue is as also a key element of the 2018 Africa-Europe
+                              Alliance Communication which focuses on sustained support to policy reforms improving
+                              business environment, capacity building and technical assistance to African institutions.
+                            </p>
                             <p><br></p>
                           </div>
                         </div>
@@ -914,8 +1253,12 @@ pointer-events:none
             </div>
           </div>
           <div id="next" class="nextsection">
-            <a href="#sb4atimeline" data-w-id="21406932-1baa-6012-fad8-95f4a95e3acb" class="link-block-timeline w-inline-block">
-              <div data-w-id="21406932-1baa-6012-fad8-95f4a95e3acc" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
+            <a href="#sb4atimeline" data-w-id="21406932-1baa-6012-fad8-95f4a95e3acb"
+              class="link-block-timeline w-inline-block">
+              <div data-w-id="21406932-1baa-6012-fad8-95f4a95e3acc" data-animation-type="lottie"
+                data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json"
+                data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
             </a>
             <div class="lottie-2">Next: SB4A Timeline</div>
           </div>
@@ -925,27 +1268,41 @@ pointer-events:none
         <div class="section__inner-wrap">
           <div data-w-id="5384bd95-81dc-5423-ad74-0290624b066a" style="opacity:0" class="div-block-2">
             <h1 class="heading"><span class="number">09</span> sb4a timeline</h1>
-            <blockquote class="block-quote-timeline">Since 2017 when the SB4A platform was launched, there have been a series of key developments in the platform&#x27;s evolution. Explore the timeline below to find out more about each</blockquote>
+            <blockquote class="block-quote-timeline">Since 2017 when the SB4A platform was launched, there have been a
+              series of key developments in the platform&#x27;s evolution. Explore the timeline below to find out more
+              about each</blockquote>
           </div>
-          <div data-duration-in="1000" data-duration-out="500" id="tabs-timeline" style="-webkit-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d" class="tabs-timeline w-tabs">
+          <div data-duration-in="1000" data-duration-out="500" id="tabs-timeline"
+            style="-webkit-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0PX, 100PX, 0PX) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform-style:preserve-3d"
+            class="tabs-timeline w-tabs">
             <div id="tabs-menu-timeline" class="tabs-menu-timeline w-tab-menu">
-              <a data-w-tab="TL 2017" data-w-id="5b363ffc-18f2-f631-c8df-378c721ff55b" class="tab-link-tl-2017 w-inline-block w-tab-link"><img src="images/Timeline-2017.png" loading="lazy" alt="" class="img-2017timeline"></a>
-              <a data-w-tab="TL 2019" data-w-id="5b363ffc-18f2-f631-c8df-378c721ff55d" class="tab-link-tl2019 w-inline-block w-tab-link"><img src="images/Timeline-2019.png" loading="lazy" alt="" class="img-2019tl"></a>
-              <a data-w-tab="TL 2020" data-w-id="5b363ffc-18f2-f631-c8df-378c721ff55f" class="tab-link-2020tl w-inline-block w-tab-link"><img src="images/Timeline-2020.png" loading="lazy" alt="" class="img-2020tl"></a>
+              <a data-w-tab="TL 2017" data-w-id="5b363ffc-18f2-f631-c8df-378c721ff55b"
+                class="tab-link-tl-2017 w-inline-block w-tab-link"><img src="images/Timeline-2017.png" loading="lazy"
+                  alt="" class="img-2017timeline"></a>
+              <a data-w-tab="TL 2019" data-w-id="5b363ffc-18f2-f631-c8df-378c721ff55d"
+                class="tab-link-tl2019 w-inline-block w-tab-link"><img src="images/Timeline-2019.png" loading="lazy"
+                  alt="" class="img-2019tl"></a>
+              <a data-w-tab="TL 2020" data-w-id="5b363ffc-18f2-f631-c8df-378c721ff55f"
+                class="tab-link-2020tl w-inline-block w-tab-link"><img src="images/Timeline-2020.png" loading="lazy"
+                  alt="" class="img-2020tl"></a>
             </div>
             <div class="tabs-content-timeline w-tab-content">
               <div data-w-tab="TL 2017" class="tab-panel-2017 w-tab-pane">
                 <div class="ss-wrapper">
-                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1" id="slider-timeline2017" class="slider w-slider">
+                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1"
+                    id="slider-timeline2017" class="slider w-slider">
                     <div class="mask-2 w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
                           <div class="card-fill"></div>
                           <div class="rte w-richtext">
                             <h2>2017: Launch of the SB4A Platform</h2>
-                            <p>SB4A was created in 2017, with the aim of improving the investment climate of the EU’s partner countries in Africa by including the perspective of businesses and relevant stakeholders. </p>
+                            <p>SB4A was created in 2017, with the aim of improving the investment climate of the EU’s
+                              partner countries in Africa by including the perspective of businesses and relevant
+                              stakeholders. </p>
                             <p>‍</p>
-                            <p>The SB4A platform supports public-private dialogue facilitation, at EUD and Headquarter levels. </p>
+                            <p>The SB4A platform supports public-private dialogue facilitation, at EUD and Headquarter
+                              levels. </p>
                             <p>‍</p>
                           </div>
                         </div>
@@ -955,8 +1312,12 @@ pointer-events:none
                           <div class="card-fill"></div>
                           <div class="rte w-richtext">
                             <h2>Annual State of Play of SB4A</h2>
-                            <p>When SB4A was launched, a in-depth knowledge of the state of play of PPD in African partner countries was sought to better understand, at a country level, what were the mechanisms in place, their characteristics, and the involvement of each EU Delegation to support public-private dialogue. </p>
-                            <p>The first SB4A State of Play is based on a survey sent by email to all 49 EU Delegations in Africa on the March 2019. </p>
+                            <p>When SB4A was launched, a in-depth knowledge of the state of play of PPD in African
+                              partner countries was sought to better understand, at a country level, what were the
+                              mechanisms in place, their characteristics, and the involvement of each EU Delegation to
+                              support public-private dialogue. </p>
+                            <p>The first SB4A State of Play is based on a survey sent by email to all 49 EU Delegations
+                              in Africa on the March 2019. </p>
                             <p>‍</p>
                             <p><br></p>
                           </div>
@@ -975,12 +1336,14 @@ pointer-events:none
               </div>
               <div data-w-tab="TL 2019" class="tab-panel-2019 w-tab-pane">
                 <div class="ss-wrapper">
-                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1" id="slider-timeline2019" class="slider w-slider">
+                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1"
+                    id="slider-timeline2019" class="slider w-slider">
                     <div class="mask-2 w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">Video SB4A network launch</h4><img src="images/card-default.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">Video SB4A network launch</h4><img
+                              src="images/card-default.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: Description max two lines: </p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -988,8 +1351,14 @@ pointer-events:none
                           </a>
                           <div class="rte w-richtext">
                             <h3>2019 : Official Launch of the SB4A Network</h3>
-                            <p>Antti Karhunen, Head of DEVCO C4, officially launched the SB4A network on October 11th, 2019 in Brussels. The meeting was characterised by the diversity and quality of contributions from participants, the openness of discussions that took place during the meeting and the group emulation that resulted from convening the skills and experiences of over 40 participants from 17 EU Delegations, 3 different DGs (DEVCO, GROW, TRADE) and EEAS, and 6 experts from the TPSD Facility. </p>
-                            <p>The event succeeded in creating a momentum among members of a growing community of practice now spreading across DEVCO HQ, EU Delegations, various DGs and EEAS.  </p>
+                            <p>Antti Karhunen, Head of DEVCO C4, officially launched the SB4A network on October 11th,
+                              2019 in Brussels. The meeting was characterised by the diversity and quality of
+                              contributions from participants, the openness of discussions that took place during the
+                              meeting and the group emulation that resulted from convening the skills and experiences of
+                              over 40 participants from 17 EU Delegations, 3 different DGs (DEVCO, GROW, TRADE) and
+                              EEAS, and 6 experts from the TPSD Facility. </p>
+                            <p>The event succeeded in creating a momentum among members of a growing community of
+                              practice now spreading across DEVCO HQ, EU Delegations, various DGs and EEAS.  </p>
                             <p>‍</p>
                           </div>
                         </div>
@@ -1007,12 +1376,14 @@ pointer-events:none
               </div>
               <div data-w-tab="TL 2020" class="tab-panel-2020 w-tab-pane">
                 <div class="ss-wrapper">
-                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1" id="slider-timeline2020" class="slider w-slider">
+                  <div data-animation="cross" data-hide-arrows="1" data-duration="500" data-infinite="1"
+                    id="slider-timeline2020" class="slider w-slider">
                     <div class="mask-2 w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
                           <a data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ebf" href="#" class="bake72 w-inline-block">
-                            <h4 class="media_card_title">o Video SB4A event 22/10/20 (to come)</h4><img src="images/card-default.png" loading="lazy" alt="" class="image-10">
+                            <h4 class="media_card_title">o Video SB4A event 22/10/20 (to come)</h4><img
+                              src="images/card-default.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: Description max two lines:</p>
                             <div id="sym-link" data-w-id="2d353e6e-fd74-70e1-d546-c4842e012ec3" class="bake72__button">
                               <div class="bake72__button__text">watch the video</div>
@@ -1039,8 +1410,12 @@ pointer-events:none
             </div>
           </div>
           <div id="next" class="nextsection">
-            <a href="#stateofplay" data-w-id="29cd3ba5-358a-1e7f-66b1-9383ac201bd3" class="link-block-t-k w-inline-block">
-              <div data-w-id="29cd3ba5-358a-1e7f-66b1-9383ac201bd4" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
+            <a href="#stateofplay" data-w-id="29cd3ba5-358a-1e7f-66b1-9383ac201bd3"
+              class="link-block-t-k w-inline-block">
+              <div data-w-id="29cd3ba5-358a-1e7f-66b1-9383ac201bd4" data-animation-type="lottie"
+                data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json"
+                data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
             </a>
             <div class="lottie-3">Next: SB4A State of Play</div>
           </div>
@@ -1050,13 +1425,23 @@ pointer-events:none
         <div class="section__inner-wrap">
           <div class="sopheader">
             <h1 class="heading"><span class="number">10</span> state of play</h1>
-            <blockquote style="opacity:1" class="block-quote-sop">Explore this section and its country profiles to learn about the structured dialogue mechanisms currently in place in Africa, their efficiency and inclusivity, and the involvement of each EU Delegation to support public-private dialogue.<br></blockquote>
+            <blockquote style="opacity:1" class="block-quote-sop">Explore this section and its country profiles to learn
+              about the structured dialogue mechanisms currently in place in Africa, their efficiency and inclusivity,
+              and the involvement of each EU Delegation to support public-private dialogue.<br></blockquote>
           </div>
-          <div data-duration-in="1000" data-duration-out="500" id="tabs-stateofplay" style="-webkit-transform:translate3d(0, -10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="tabs-stateofplay w-tabs">
+          <div data-duration-in="1000" data-duration-out="500" id="tabs-stateofplay"
+            style="-webkit-transform:translate3d(0, -10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -10PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+            class="tabs-stateofplay w-tabs">
             <div class="tabs-menu-sop w-tab-menu">
-              <a data-w-tab="SoPA" data-w-id="e207b50b-7759-69f0-ec94-10680d8ed5ba" class="tablink-sop1 w-inline-block w-tab-link"><img src="images/SoPNew1.png" loading="lazy" alt="" class="imgsop1"></a>
-              <a data-w-tab="SoPB" id="SoPmap" data-w-id="e207b50b-7759-69f0-ec94-10680d8ed5bc" class="sopmap w-inline-block w-tab-link w--current"><img src="images/SoPKey-Takeaways.png" loading="lazy" alt="" class="imgsop2"></a>
-              <a data-w-tab="SoPC" data-w-id="e207b50b-7759-69f0-ec94-10680d8ed5be" class="tablink-sop3 w-inline-block w-tab-link"><img src="images/SoPRanking-PPD.png" loading="lazy" alt="" class="imgsop3"></a>
+              <a data-w-tab="SoPA" data-w-id="e207b50b-7759-69f0-ec94-10680d8ed5ba"
+                class="tablink-sop1 w-inline-block w-tab-link"><img src="images/SoPNew1.png" loading="lazy" alt=""
+                  class="imgsop1"></a>
+              <a data-w-tab="SoPB" id="SoPmap" data-w-id="e207b50b-7759-69f0-ec94-10680d8ed5bc"
+                class="sopmap w-inline-block w-tab-link w--current"><img src="images/SoPKey-Takeaways.png"
+                  loading="lazy" alt="" class="imgsop2"></a>
+              <a data-w-tab="SoPC" data-w-id="e207b50b-7759-69f0-ec94-10680d8ed5be"
+                class="tablink-sop3 w-inline-block w-tab-link"><img src="images/SoPRanking-PPD.png" loading="lazy"
+                  alt="" class="imgsop3"></a>
               <a data-w-tab="SoPintro" class="tab-link-sopintro w-inline-block w-tab-link"></a>
             </div>
             <div class="tabs-content w-tab-content">
@@ -1065,31 +1450,48 @@ pointer-events:none
               </div>
               <div data-w-tab="SoPB" class="w-tab-pane w--tab-active">
                 <div class="ss-wrapper">
-                  <div data-animation="cross" data-hide-arrows="1" data-nav-spacing="10" data-duration="500" data-infinite="1" class="slider w-slider">
+                  <div data-animation="cross" data-hide-arrows="1" data-nav-spacing="10" data-duration="500"
+                    data-infinite="1" class="slider w-slider">
                     <div class="mask w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
-                          <div class="card-fill-small"><img src="images/legend.png" loading="lazy" alt="" class="image-18"></div>
+                          <div class="card-fill-small"><img src="images/legend.png" loading="lazy" alt=""
+                              class="image-18"></div>
                           <div class="rte w-richtext">
                             <h2>Key Takeaways</h2>
-                            <p>The 2019 State of Play shows a positive trend towards SB4A uptake by EU Delegations, although this uptake still needed to be encouraged and actively supported. Many disparities exist throughout Africa in terms of PPD effectiveness and inclusiveness, and some EUDs had not yet started to facilitate public-private dialogue mechanisms. Main takeaways of the 2019 survey:<br>PPD <strong>is widespread</strong> in Africa: 77% of surveyed countries have an established PPD, Yet the mechanisms in place show a rather <strong>low effectiveness</strong> (3.9/10) in terms of investment climate improvement. <br><br><strong class="bold-text-2">Fragile states</strong> have few or poorly effective PPD mechanisms </p>
+                            <p>The 2019 State of Play shows a positive trend towards SB4A uptake by EU Delegations,
+                              although this uptake still needed to be encouraged and actively supported. Many
+                              disparities exist throughout Africa in terms of PPD effectiveness and inclusiveness, and
+                              some EUDs had not yet started to facilitate public-private dialogue mechanisms. Main
+                              takeaways of the 2019 survey:<br>PPD <strong>is widespread</strong> in Africa: 77% of
+                              surveyed countries have an established PPD, Yet the mechanisms in place show a rather
+                              <strong>low effectiveness</strong> (3.9/10) in terms of investment climate improvement.
+                              <br><br><strong class="bold-text-2">Fragile states</strong> have few or poorly effective
+                              PPD mechanisms </p>
                             <p>‍</p>
                           </div>
                         </div>
                       </div>
                       <div class="slide-2 w-slide">
-                        <div class="div-block-14"><img src="images/the-EUD-involvement-in-PPD.png" loading="lazy" alt="" class="image-13">
-                          <div class="text-block-3-copy">82% of EUDs already have regular contacts with the private sector and 31%  are already involved in facilitating PPD. </div>
+                        <div class="div-block-14"><img src="images/the-EUD-involvement-in-PPD.png" loading="lazy" alt=""
+                            class="image-13">
+                          <div class="text-block-3-copy">82% of EUDs already have regular contacts with the private
+                            sector and 31%  are already involved in facilitating PPD. </div>
                         </div>
                       </div>
                       <div class="w-slide">
-                        <div class="div-block-14"><img src="images/PS-representaion-in-PPD.png" loading="lazy" alt="" class="image-13">
-                          <div class="text-block-3-copy"><strong>Large companies and the financial sector predominate PPDs, while micro and informal enterprises tend to be underrepresented.</strong></div>
+                        <div class="div-block-14"><img src="images/PS-representaion-in-PPD.png" loading="lazy" alt=""
+                            class="image-13">
+                          <div class="text-block-3-copy"><strong>Large companies and the financial sector predominate
+                              PPDs, while micro and informal enterprises tend to be underrepresented.</strong></div>
                         </div>
                       </div>
                       <div class="w-slide">
-                        <div class="div-block-14"><img src="images/public-sector-weight-and-inclusiveness.png" loading="lazy" alt="" class="image-13">
-                          <div class="text-block-3-copy"><strong>Governments tend to dominate the participation in public-private consultation mechanisms, with the risk that they capture them. Women and youth are underrepresented in PPDs. </strong></div>
+                        <div class="div-block-14"><img src="images/public-sector-weight-and-inclusiveness.png"
+                            loading="lazy" alt="" class="image-13">
+                          <div class="text-block-3-copy"><strong>Governments tend to dominate the participation in
+                              public-private consultation mechanisms, with the risk that they capture them. Women and
+                              youth are underrepresented in PPDs. </strong></div>
                         </div>
                       </div>
                     </div>
@@ -1105,7 +1507,8 @@ pointer-events:none
               </div>
               <div data-w-tab="SoPC" class="w-tab-pane">
                 <div class="ss-wrapper">
-                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500" data-infinite="1" class="slider w-slider">
+                  <div data-animation="slide" data-hide-arrows="1" data-nav-spacing="10" data-duration="500"
+                    data-infinite="1" class="slider w-slider">
                     <div class="mask w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
@@ -1113,7 +1516,10 @@ pointer-events:none
                           <div class="rte w-richtext">
                             <h2>Ranking Public-Private Dialogue</h2>
                             <blockquote>The perceived quality of PPD in surveyed countries is based on: </blockquote>
-                            <blockquote>Perceived effectiveness of PPD in terms of improving the business environment/investment climate, Weighted with overall inclusivity score (+1 for countries with an overall inclusivity score above average; -1 for countries with an overall inclusivity below average). </blockquote>
+                            <blockquote>Perceived effectiveness of PPD in terms of improving the business
+                              environment/investment climate, Weighted with overall inclusivity score (+1 for countries
+                              with an overall inclusivity score above average; -1 for countries with an overall
+                              inclusivity below average). </blockquote>
                             <p>‍</p>
                             <p><strong><br></strong></p>
                             <p>‍</p>
@@ -1135,10 +1541,12 @@ pointer-events:none
                 <div class="card-nov">
                   <div class="card-fill"></div>
                   <div class="rte w-richtext">
-                    <blockquote>In March 2019, an SB4A survey was sent out to all 49 EU Delegations in Africa. The purpose of the survey was to :</blockquote>
+                    <blockquote>In March 2019, an SB4A survey was sent out to all 49 EU Delegations in Africa. The
+                      purpose of the survey was to :</blockquote>
                     <p>Map out the structured dialogue initiatives in Africa.</p>
                     <p>Understand how the EU Delegations support them.</p>
-                    <p>Assess what knowledge and technical assistance the EUDelegations need the most to further facilitate public-private dialogue.</p>
+                    <p>Assess what knowledge and technical assistance the EUDelegations need the most to further
+                      facilitate public-private dialogue.</p>
                     <p>‍</p>
                   </div>
                 </div>
@@ -1147,7 +1555,10 @@ pointer-events:none
           </div>
           <div id="next" class="nextsection">
             <a href="#library" class="link-block-library w-inline-block">
-              <div data-w-id="ec7105a7-f34c-3be6-1686-2d8f6ecf03fb" data-animation-type="lottie" data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
+              <div data-w-id="ec7105a7-f34c-3be6-1686-2d8f6ecf03fb" data-animation-type="lottie"
+                data-src="https://uploads-ssl.webflow.com/5ec4f0a9a52f31983f89611f/5ec4f0a9a52f31c0888961a3_8711-scroll-down-hint.json"
+                data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg"
+                data-default-duration="5.36" data-duration="0" class="lottie-animation-7"></div>
             </a>
             <div class="lottie-5 _4">Next: Library</div>
           </div>
@@ -1158,295 +1569,303 @@ pointer-events:none
           <div style="opacity:0" class="div-block-2">
             <h1 class="heading"><span class="number">11</span>library</h1>
             <blockquote class="block-quote">Full document &amp; media library</blockquote>
-            <div class="div-block-6"><img src="images/Policy_1.png" loading="lazy" id="w-node-bbd76b6d6576-9026e6bc" alt="" class="image-8"><img src="images/Policy_2.png" loading="lazy" alt=""><img src="images/KeyConcept_3.png" loading="lazy" alt=""><img src="images/KeyConcept_1.png" loading="lazy" alt=""><img src="images/COVID_2.png" loading="lazy" alt=""><img src="images/Fragile_3.png" loading="lazy" alt=""><img src="images/KeyConcept_2.png" loading="lazy" alt=""><img src="images/KeyConcept_2.png" loading="lazy" alt=""><img src="images/KeyConcept_2.png" loading="lazy" alt=""><img src="images/KeyConcept_2.png" loading="lazy" alt=""></div>
+            <div class="div-block-6"><img src="images/Policy_1.png" loading="lazy" id="w-node-bbd76b6d6576-9026e6bc"
+                alt="" class="image-8"><img src="images/Policy_2.png" loading="lazy" alt=""><img
+                src="images/KeyConcept_3.png" loading="lazy" alt=""><img src="images/KeyConcept_1.png" loading="lazy"
+                alt=""><img src="images/COVID_2.png" loading="lazy" alt=""><img src="images/Fragile_3.png"
+                loading="lazy" alt=""><img src="images/KeyConcept_2.png" loading="lazy" alt=""><img
+                src="images/KeyConcept_2.png" loading="lazy" alt=""><img src="images/KeyConcept_2.png" loading="lazy"
+                alt=""><img src="images/KeyConcept_2.png" loading="lazy" alt=""></div>
           </div>
         </div>
       </div>
       <div class="footer-wrap"></div>
     </div>
   </div>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5fa827c6534464cab39b0e03" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5fa827c6534464cab39b0e03"
+    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script type="text/javascript">
-$(document).ready(function() {
-$("#Video video").removeAttr("loop");
-});
-</script>
+    $(document).ready(function () {
+      $("#Video video").removeAttr("loop");
+    });
+  </script>
   <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js"></script>
   <script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoic3RldmVidXR0b24iLCJhIjoiNEw1T183USJ9.Sv_1qSC23JdXot8YIRPi8A';
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/stevebutton/ck9i8wv640t4c1iqeiphu3soc',
-center: [28.03439, 24.63541],
-zoom: 1.37,
-pitch: 17,
-bearing: 7.81,
-container: 'map',
-antialias: true,
-interactive: true
-});
-// The 'building' layer in the mapbox-streets vector source contains building-height
-// data from OpenStreetMap.
-map.on('load', function() {
-// Insert the layer beneath any symbol layer.
-var layers = map.getStyle().layers;
-var labelLayerId;
-for (var i = 0; i < layers.length; i++) {
-if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
-labelLayerId = layers[i].id;
-break;
-}
-}
-map.addLayer({
-'id': '3d-buildings',
-'source': 'composite',
-'source-layer': 'building',
-'filter': ['==', 'extrude', 'true'],
-'type': 'fill-extrusion',
-'minzoom': 15,
-'paint': {
-'fill-extrusion-color': '#aaa',
-// use an 'interpolate' expression to add a smooth transition effect to the
-// buildings as the user zooms in
-'fill-extrusion-height': [
-"interpolate", ["linear"], ["zoom"],
-5, 0,
-5.05, ["get", "height"]
-],
-'fill-extrusion-base': [
-"interpolate", ["linear"], ["zoom"],
-5, 0,
-5.05, ["get", "min_height"]
-],
-'fill-extrusion-opacity': .6
-}
-}, labelLayerId);
-});
-var chapters = {
-    'keyconcepts': {
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic3RldmVidXR0b24iLCJhIjoiNEw1T183USJ9.Sv_1qSC23JdXot8YIRPi8A';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/stevebutton/ck9i8wv640t4c1iqeiphu3soc',
+      center: [28.03439, 24.63541],
+      zoom: 1.37,
+      pitch: 17,
+      bearing: 7.81,
+      container: 'map',
+      antialias: true,
+      interactive: true
+    });
+    // The 'building' layer in the mapbox-streets vector source contains building-height
+    // data from OpenStreetMap.
+    map.on('load', function () {
+      // Insert the layer beneath any symbol layer.
+      var layers = map.getStyle().layers;
+      var labelLayerId;
+      for (var i = 0; i < layers.length; i++) {
+        if (layers[i].type === 'symbol' && layers[i].layout['text-field']) {
+          labelLayerId = layers[i].id;
+          break;
+        }
+      }
+      map.addLayer({
+        'id': '3d-buildings',
+        'source': 'composite',
+        'source-layer': 'building',
+        'filter': ['==', 'extrude', 'true'],
+        'type': 'fill-extrusion',
+        'minzoom': 15,
+        'paint': {
+          'fill-extrusion-color': '#aaa',
+          // use an 'interpolate' expression to add a smooth transition effect to the
+          // buildings as the user zooms in
+          'fill-extrusion-height': [
+            "interpolate", ["linear"], ["zoom"],
+            5, 0,
+            5.05, ["get", "height"]
+          ],
+          'fill-extrusion-base': [
+            "interpolate", ["linear"], ["zoom"],
+            5, 0,
+            5.05, ["get", "min_height"]
+          ],
+          'fill-extrusion-opacity': .6
+        }
+      }, labelLayerId);
+    });
+    var chapters = {
+      'keyconcepts': {
         bearing: 0,
         duration: 5000,
-        center: [18.79277, 9.78503 ],
+        center: [18.79277, 9.78503],
         zoom: 2.4,
         pitch: 0
-    },
-     'facilitating-PPD': {
+      },
+      'facilitating-PPD': {
         bearing: 16,
         duration: 5000,
-        center: [20.28546, 10.20367 ],
+        center: [20.28546, 10.20367],
         zoom: 2.42,
         pitch: 40
-    },
-     'fragile-contexts': {
+      },
+      'fragile-contexts': {
         bearing: 0,
         duration: 5000,
-        center: [15.56207, -0.84668  ],
+        center: [15.56207, -0.84668],
         zoom: 2.82,
-       pitch: 44.50
-    },
-    'COVID-times': {
+        pitch: 44.50
+      },
+      'COVID-times': {
         bearing: 0,
         duration: 5000,
-        center: [18.79277, 9.78503 ],
+        center: [18.79277, 9.78503],
         zoom: 2.4,
         pitch: 0
-    },
-     'mapping-stakeholders': {
+      },
+      'mapping-stakeholders': {
         bearing: 7.17,
         duration: 7000,
-        center: [11.21081, 7.07252 ],
+        center: [11.21081, 7.07252],
         zoom: 3.99,
         pitch: 56
-    },
-     'supporting-inclusivity': {
+      },
+      'supporting-inclusivity': {
         bearing: 0,
         duration: 5000,
-        center: [26.79277, 19.78503 ],
+        center: [26.79277, 19.78503],
         zoom: 2.4,
         pitch: 0
-    },
+      },
       'monitoring-evaluation': {
         bearing: 0,
         duration: 5000,
-        center: [26.79277, 12.78503 ],
+        center: [26.79277, 12.78503],
         zoom: 2.4,
         pitch: 0
-    },
-    'policybackground': {
+      },
+      'policybackground': {
         duration: 5000,
         bearing: 10.33,
         duration: 5000,
-        center: [18.92627, 5.56914 ],
+        center: [18.92627, 5.56914],
         zoom: 2.42,
         pitch: 43
-    },
-    'sb4atimeline': {
-         duration: 5000,
+      },
+      'sb4atimeline': {
+        duration: 5000,
         bearing: -12,
         duration: 5000,
-        center: [18.73076, 2.93439 ],
+        center: [18.73076, 2.93439],
         zoom: 3.19,
         pitch: 46
-    },
-    'stateofplay': {
+      },
+      'stateofplay': {
         bearing: 0,
         duration: 5000,
-        center: [18.79277, 9.78503 ],
+        center: [18.79277, 9.78503],
         zoom: 2.4,
         pitch: 0
-    },
-    'library': {
+      },
+      'library': {
         duration: 5000,
         bearing: 0,
         duration: 5000,
-        center: [18.79277, 9.78503 ],
+        center: [18.79277, 9.78503],
         zoom: 2.4,
         pitch: 0
-    },
-    'market-street': {
+      },
+      'market-street': {
         bearing: 90,
         duration: 5000,
         center: [7.946527, -1.023194],
         zoom: 4.3,
         pitch: 20
-    }
-};// JavaScript Document
-// On every scroll event, check which element is on screen
-window.onscroll = function() {
-    var chapterNames = Object.keys(chapters);
-    for (var i = 0; i < chapterNames.length; i++) {
+      }
+    };// JavaScript Document
+    // On every scroll event, check which element is on screen
+    window.onscroll = function () {
+      var chapterNames = Object.keys(chapters);
+      for (var i = 0; i < chapterNames.length; i++) {
         var chapterName = chapterNames[i];
         if (isElementOnScreen(chapterName)) {
-            setActiveChapter(chapterName);
-            break;
+          setActiveChapter(chapterName);
+          break;
         }
+      }
+    };
+    var activeChapterName = 'chinatown';
+    function setActiveChapter(chapterName) {
+      if (chapterName === activeChapterName) return;
+      map.flyTo(chapters[chapterName]);
+      document.getElementById(chapterName).setAttribute('class', 'active');
+      document.getElementById(activeChapterName).setAttribute('class', '');
+      activeChapterName = chapterName;
     }
-};
-var activeChapterName = 'chinatown';
-function setActiveChapter(chapterName) {
-    if (chapterName === activeChapterName) return;
-    map.flyTo(chapters[chapterName]);
-    document.getElementById(chapterName).setAttribute('class', 'active');
-    document.getElementById(activeChapterName).setAttribute('class', '');
-    activeChapterName = chapterName;
-}
-function isElementOnScreen(id) {
-    var element = document.getElementById(id);
-    var bounds = element.getBoundingClientRect();
-    return bounds.top < window.innerHeight && bounds.bottom > 300;
-}
-</script>
+    function isElementOnScreen(id) {
+      var element = document.getElementById(id);
+      var bounds = element.getBoundingClientRect();
+      return bounds.top < window.innerHeight && bounds.bottom > 300;
+    }
+  </script>
   <script>
- $(document).on("click", "#FlytoGhana", function () {
-        map.flyTo({
-          speed: 0.3,
-          curve: 1,
-          center: { lon: -0.42631, lat: 6.87542 },
-          zoom: 6.09,
-          pitch: 45.00,
-          bearing: 10.33
-        });
+    $(document).on("click", "#FlytoGhana", function () {
+      map.flyTo({
+        speed: 0.3,
+        curve: 1,
+        center: { lon: -0.42631, lat: 6.87542 },
+        zoom: 6.09,
+        pitch: 45.00,
+        bearing: 10.33
       });
-      $(document).on("click", "#FlytoSA", function () {
-        map.flyTo({
-          speed: 0.3,
-          curve: 1,
-          center: { lon: 27.22869, lat: -28.69852 },
-          zoom: 4.09,
-          pitch: 13.00,
-          bearing: 0.33
-        });
+    });
+    $(document).on("click", "#FlytoSA", function () {
+      map.flyTo({
+        speed: 0.3,
+        curve: 1,
+        center: { lon: 27.22869, lat: -28.69852 },
+        zoom: 4.09,
+        pitch: 13.00,
+        bearing: 0.33
       });
-      $(document).on("click", "#FlytoUganda", function () {
-        map.flyTo({
-          speed: 0.3,
-          curve: 1,
-          center: { lon: 33.17913, lat: -0.78891 },
-          zoom: 5.43,
-          pitch: 33.00,
-          bearing: -0.14
-        });
+    });
+    $(document).on("click", "#FlytoUganda", function () {
+      map.flyTo({
+        speed: 0.3,
+        curve: 1,
+        center: { lon: 33.17913, lat: -0.78891 },
+        zoom: 5.43,
+        pitch: 33.00,
+        bearing: -0.14
       });
-       $(document).on("click", "#cameroon-1", function () {
-        map.flyTo({
-          speed: 0.3,
-          curve: 1,
-          center: { lon: 13.26963, lat: 5.10416 },
-zoom: 5.21,
-pitch: 56.50,
-bearing: 7.17
-        });
+    });
+    $(document).on("click", "#cameroon-1", function () {
+      map.flyTo({
+        speed: 0.3,
+        curve: 1,
+        center: { lon: 13.26963, lat: 5.10416 },
+        zoom: 5.21,
+        pitch: 56.50,
+        bearing: 7.17
       });
-        $(document).on("mouseover", "#FlytoBenin", function () {
-        map.flyTo({
-          speed: 0.3,
-          curve: 1,
-         center: { lon: 2.31662, lat: 9.28952 },
-zoom: 6.21,
-pitch: 52.50,
-bearing: 0.00
-        });
+    });
+    $(document).on("mouseover", "#FlytoBenin", function () {
+      map.flyTo({
+        speed: 0.3,
+        curve: 1,
+        center: { lon: 2.31662, lat: 9.28952 },
+        zoom: 6.21,
+        pitch: 52.50,
+        bearing: 0.00
       });
-        $(document).on("mouseover", "#FlytoLiberia", function () {
-        map.flyTo({
-          speed: 0.3,
-          curve: 1,
-         center: { lon: -9.30840, lat: 5.14257 },
-zoom: 6.00,
-pitch: 44.50,
-bearing: 0.00
-        });
+    });
+    $(document).on("mouseover", "#FlytoLiberia", function () {
+      map.flyTo({
+        speed: 0.3,
+        curve: 1,
+        center: { lon: -9.30840, lat: 5.14257 },
+        zoom: 6.00,
+        pitch: 44.50,
+        bearing: 0.00
       });
-       $(document).on("click", "#FlytoCovid", function () {
-        map.flyTo({
-          speed: 0.3,
-          curve: 1,
-         center: { lon: 1.30342, lat: 7.66495 },
-zoom: 4.33,
-pitch: 50.00,
-bearing: 13.60
-        });
+    });
+    $(document).on("click", "#FlytoCovid", function () {
+      map.flyTo({
+        speed: 0.3,
+        curve: 1,
+        center: { lon: 1.30342, lat: 7.66495 },
+        zoom: 4.33,
+        pitch: 50.00,
+        bearing: 13.60
       });
-        $(document).on("click", "#FlytoChampions", function () {
-        map.flyTo({
-          duration: 5000,
-          curve: 1,
-         center: { lon: 14.02702, lat: 5.27758 },
-zoom: 3.07,
-pitch: 13.00,
-bearing: 0.00
-        });
+    });
+    $(document).on("click", "#FlytoChampions", function () {
+      map.flyTo({
+        duration: 5000,
+        curve: 1,
+        center: { lon: 14.02702, lat: 5.27758 },
+        zoom: 3.07,
+        pitch: 13.00,
+        bearing: 0.00
       });
-    </script>
+    });
+  </script>
   <script>
-const slider = document.querySelector(".Tabs Menu Test");
-let isDown = false;
-let startX;
-let scrollLeft;
-slider.addEventListener("mousedown", e => {
- isDown = true;
- slider.classList.add("active");
- startX = e.pageX - slider.offsetLeft;
- scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener("mouseleave", () => {
- isDown = false;
- slider.classList.remove("active");
-});
-slider.addEventListener("mouseup", () => {
- isDown = false;
- slider.classList.remove("active");
-});
-slider.addEventListener("mousemove", e => {
- if (!isDown) return;
- e.preventDefault();
- const x = e.pageX - slider.offsetLeft;
- const walk = x - startX;
- slider.scrollLeft = scrollLeft - walk;
-});
-</script>
+    const slider = document.querySelector(".Tabs Menu Test");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    slider.addEventListener("mousedown", e => {
+      isDown = true;
+      slider.classList.add("active");
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener("mouseleave", () => {
+      isDown = false;
+      slider.classList.remove("active");
+    });
+    slider.addEventListener("mouseup", () => {
+      isDown = false;
+      slider.classList.remove("active");
+    });
+    slider.addEventListener("mousemove", e => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = x - startX;
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  </script>
   <!--  add js files   -->
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <script src="js/radarChart.js" type="text/javascript"></script>
@@ -1454,4 +1873,5 @@ slider.addEventListener("mousemove", e => {
   <script src="js/video.js" type="text/javascript"></script>
   <script src="js/webflow.events.slider.js" type="text/javascript"></script>
 </body>
+
 </html>
