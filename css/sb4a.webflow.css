@@ -715,7 +715,7 @@ blockquote {
   z-index: 8888;
   display: block;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .price-duration {
@@ -2659,6 +2659,11 @@ blockquote {
   padding-right: 0px;
   padding-left: 0px;
   background-color: transparent;
+  background-image: url('../images/INCLUSIVENESS-on.png');
+  background-position: 0px 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .tab-link-tab-2-2.w--current {
@@ -2699,6 +2704,11 @@ blockquote {
   padding-right: 0px;
   padding-left: 0px;
   background-color: transparent;
+  background-image: url('../images/SUSTAINABILITY-on.png');
+  background-position: 0px 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .tab-link-tab-3-2.w--current {
@@ -2832,6 +2842,11 @@ blockquote {
   padding-right: 0px;
   padding-left: 0px;
   background-color: transparent;
+  background-image: url('../images/CAPACITY-on.png');
+  background-position: 0px 0px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .tabs-menufacppd {
@@ -3037,15 +3052,16 @@ blockquote {
 }
 
 .tab-link-champions {
-  width: 164px;
+  width: 145px;
   height: 175px;
   padding-right: 0px;
   padding-left: 0px;
   background-color: transparent;
   background-image: url('../images/WORKING-WITH-CHAMPIONS-on.png');
-  background-position: 0px 0px;
+  background-position: 0% 0%;
   background-size: auto;
   background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 
 .tab-link-champions:visited {
@@ -3064,11 +3080,13 @@ blockquote {
   top: 0%;
   right: 0%;
   bottom: auto;
+  display: block;
   background-color: transparent;
 }
 
 .tabs-content-6 {
   top: -50px;
+  margin-top: 20px;
 }
 
 .tabs-menu-keyconcepts-copy {
@@ -3507,6 +3525,33 @@ blockquote {
   display: block;
   width: 47%;
   height: 100vh;
+}
+
+.image-19 {
+  position: static;
+  display: block;
+}
+
+.image-20 {
+  position: static;
+  display: block;
+}
+
+.image-21 {
+  position: static;
+  display: block;
+}
+
+.hide-me-overlay-2 {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 8888;
+  display: block;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (min-width: 1280px) {
