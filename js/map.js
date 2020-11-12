@@ -3,8 +3,6 @@ const allMarkers = [];
 const toolsMarkers = [];
 const legend = document.getElementById('legend');
 const info = document.getElementById('marker-info');
-const next = document.getElementById('next_info');
-const prev = document.getElementById('prev_info');
 legend.style.display = 'none';
 
 const pulsationColor = '#D8D8D8'
@@ -251,32 +249,46 @@ map.on('load', () => {
                 legend.innerHTML =
                     `
                     <h1 style="text-align: center;color:black">${d.Name}</h1>
-                    <!-- <h4 style="text-align: center;color:black">PPD effectiveness and inclusivity</h4> -->
-                    <div class="radarChart" style="text-align: center"></div>
-                    <div style="height:300px;overflow-y: overlay;">
-                        <div >
-                            ${d.Description}
+                  
+                    <div>
+                        
+                        <div style="text-align: center;  float:left;width:20px;cursor:pointer;margin-top: 200px">
+                            <div id="prev_info"><i class="left arrow"></i></div>
                         </div>
-                        <button class="collapsible">Other main features</button>
-                        <div class="content_c">
-                            <p>${mainFeatures}</p>
+
+                        <div class="radarChart" style="text-align: center;  float:left;width:350px"></div>
+
+                        <div style="height:300px;overflow-y: overlay;   float:left;width:300px;margin-left:10px">
+                            <div >
+                                ${d.Description}
+                            </div>
+                            <button class="collapsible">Other main features</button>
+                            <div class="content_c">
+                                <p>${mainFeatures}</p>
+                            </div>
+                            <button class="collapsible">Strengths</button>
+                            <div class="content_c">
+                                <p>${d.Strengths}</p>
+                            </div>
+                            <button class="collapsible">Weaknesses</button>
+                            <div class="content_c">
+                                <p>${d.Weaknesses}</p>
+                            </div>
+                            <button class="collapsible">Opportunities</button>
+                            <div class="content_c">
+                                <p>${d.Opportunities}</p>
+                            </div>
+                            <button class="collapsible">Threats</button>
+                            <div class="content_c">
+                                <p>${d.Threats}</p>
+                            </div>
                         </div>
-                        <button class="collapsible">Strengths</button>
-                        <div class="content_c">
-                            <p>${d.Strengths}</p>
+
+                        <div class="radarChart" style="text-align: center;  float:left;width:20px;cursor:pointer;margin-top: 200px">
+                            <div id="prev_info"><i class="right arrow"></i></div>
                         </div>
-                        <button class="collapsible">Weaknesses</button>
-                        <div class="content_c">
-                            <p>${d.Weaknesses}</p>
-                        </div>
-                        <button class="collapsible">Opportunities</button>
-                        <div class="content_c">
-                            <p>${d.Opportunities}</p>
-                        </div>
-                        <button class="collapsible">Threats</button>
-                        <div class="content_c">
-                            <p>${d.Threats}</p>
-                        </div>
+
+                        <div style="clear:both"></div>
                     </div>
                    
                     `
@@ -409,14 +421,16 @@ function infoDiv(visible) {
 }
 
 var event = new Event('click');
-next.addEventListener("click", i => {
+$(document).on("click", "#next_info", function () {
     console.log('next',);
     prevNext(+1)
-})
-prev.addEventListener("click", i => {
+});
+$(document).on("click", "#prev_info", function () {
     console.log('prev',);
     prevNext(-1)
-})
+});
+
+
 function prevNext(i) {
 
     currentMarker = currentMarker + i;

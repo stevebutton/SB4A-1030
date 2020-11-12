@@ -16,15 +16,15 @@
 
 .map-overlay {
     position: absolute;
-    left: 25%;
-    right: 0%;
+    left: 0px;
+    right: 0px;
     bottom: auto;
     -o-object-fit: fill;
     object-fit: fill;
     font-family: Arial, sans-serif;
     overflow-y: overlay;
     line-height: 18px;
-    width: 500px;
+    min-width: 800px; 
 }
 
 .titleChart{
@@ -39,12 +39,13 @@
 }
 
 #next-prev-buttons {
-    width: 100%;
+    width: 750px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     position: absolute;
     top: 250px;
+    pointer-events: none;
 }
 
 #next-prev-buttons>div {
