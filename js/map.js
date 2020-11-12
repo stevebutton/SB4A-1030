@@ -126,14 +126,6 @@ map.on('load', () => {
                 .setLngLat(coord)
                 .addTo(map);
 
-            var marker = new mapboxgl.Marker()
-                .setLngLat(coord)
-                .addTo(map);
-
-            new mapboxgl.Marker(div)
-                .setLngLat(coord)
-                .addTo(map);
-
             div.addEventListener('click', (e) => {
 
                 const el = e.target.firstChild || e.target.parentNode;
