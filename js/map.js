@@ -18,11 +18,12 @@ Webflow.push(function () {
     });
 });
 
+
 $(document).on("click", "#missionreports", function () {
     console.log('missionreports');
     toggleToolsMarkersVisibility()
 });
- 
+
 
 $(document).on("click", "#show_ranking_layer", function () {
     toggleLayers('sop-sb4a-quality')
@@ -37,9 +38,9 @@ $(document).on("click", "#show_ranking_layer", function () {
 });
 
 $(document).on("click", "#show_pulsation_markers", function () {
+    console.log('show_pulsation_markers');
     toggleLayers()//hide all 
     pulsationMarkersVisibility(true);
-
     map.flyTo({
         bearing: 11,
         duration: 5000,
@@ -88,8 +89,6 @@ map.on("style.load", () => {
 })
 
 
-
-
 map.on('load', () => {
 
     //TOOLS&KNOWLEDGE MARKERS PART 
@@ -122,6 +121,15 @@ map.on('load', () => {
             //========= main features part ===============
 
             var coord = [+d['Longitude'], +d['Latitude']]
+
+            new mapboxgl.Marker(div)
+                .setLngLat(coord)
+                .addTo(map);
+
+            var marker = new mapboxgl.Marker()
+                .setLngLat(coord)
+                .addTo(map);
+
             new mapboxgl.Marker(div)
                 .setLngLat(coord)
                 .addTo(map);
@@ -381,7 +389,7 @@ var toggleToolsMarkersVisibility = (function () {
         visible = !visible;
         return visible
     }
-  })();
+})();
 
 
 
@@ -481,3 +489,26 @@ function enableWindowScroll() {
     winY = null;
 };
 
+
+function toggleBorderLayer(layerName) { //show, hide, hide all layers without props
+    const layers = [
+        "cameroon",
+        "madagascar",
+        "southafrica",
+        "ghana",
+        "liberia",
+        "eu",
+        "uganda",
+        "benin",
+        "angola",
+        "togo",
+        "rwanda",
+        "DRC",
+        "morocco"
+    ]
+    layers.forEach(i => {
+        const v = (layerName && layerName === i) ? 'visible' : 'none';
+        console.log(layerName, 'visibility', v);
+        map.setLayoutProperty(i, 'visibility', v);
+    })
+}

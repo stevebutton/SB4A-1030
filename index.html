@@ -7,6 +7,10 @@
   <title>SB4A Nov 8 -New Structure</title>
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+  
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/sb4a.webflow.css" rel="stylesheet" type="text/css">
@@ -62,7 +66,20 @@
 
 <body class="body">
 
-
+    <!-- MAP PARTS -->
+    <div id="pdf" style="display: none;
+    z-index:3000;
+    position: fixed;
+    width: 700px;
+    top: 20px;
+    left: calc(50% - 350px);
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+  ">
+  </div>
+  <!-- MAP PARTS -->
+  
   <div class="copy-me-2 ">
     <div style="opacity: 0; display: none;" class="hide-me-overlay">
       <div class="modal-scroll">
@@ -1434,8 +1451,9 @@
             class="tabs-stateofplay w-tabs">
             <div class="tabs-menu-sop w-tab-menu">
               <a data-w-tab="SoPA" data-w-id="e207b50b-7759-69f0-ec94-10680d8ed5ba"
-                class="tablink-sop1 w-inline-block w-tab-link"><img src="images/SoPNew1.png" loading="lazy" alt=""
-                  class="imgsop1"></a>
+                class="tablink-sop1 w-inline-block w-tab-link" >
+                <img src="images/SoPNew1.png" loading="lazy" alt="" id="show_pulsation_markers"  class="imgsop1">
+              </a>
               <a data-w-tab="SoPB" id="SoPmap" data-w-id="e207b50b-7759-69f0-ec94-10680d8ed5bc"
                 class="sopmap w-inline-block w-tab-link w--current"><img src="images/SoPKey-Takeaways.png"
                   loading="lazy" alt="" class="imgsop2"></a>
@@ -1446,7 +1464,23 @@
             </div>
             <div class="tabs-content w-tab-content">
               <div data-w-tab="SoPA" class="tab-pane-sop-a w-tab-pane">
-                <div class="div-block-12"><img src="images/Chart.png" loading="lazy" alt="" class="image-12"></div>
+                <div class="div-block-12">
+                  <img src="images/Chart.png" loading="lazy" alt="" class="image-12">
+                  
+
+                     <!-- MAP MAREKR INFO -->
+                     <div class="map-overlay" id="marker-info">
+                      <div id="legend"></div>
+                      <div id="next-prev-buttons">
+                        <div id="prev_info"><i class="left arrow"></i></div>
+                        <div id="next_info"><i class="right arrow"></i></div>
+                      </div>
+                    </div>
+
+
+
+                
+                </div>
               </div>
               <div data-w-tab="SoPB" class="w-tab-pane w--tab-active">
                 <div class="ss-wrapper">
@@ -1592,7 +1626,6 @@
       $("#Video video").removeAttr("loop");
     });
   </script>
-  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js"></script>
   <script>
     mapboxgl.accessToken = 'pk.eyJ1Ijoic3RldmVidXR0b24iLCJhIjoiNEw1T183USJ9.Sv_1qSC23JdXot8YIRPi8A';
     var map = new mapboxgl.Map({
@@ -1744,13 +1777,33 @@
       }
     };
     var activeChapterName = 'chinatown';
+    // function setActiveChapter(chapterName) {
+    //   if (chapterName === activeChapterName) return;
+    //   map.flyTo(chapters[chapterName]);
+    //   document.getElementById(chapterName).setAttribute('class', 'active');
+    //   document.getElementById(activeChapterName).setAttribute('class', '');
+    //   activeChapterName = chapterName;
+    // }
+
+
     function setActiveChapter(chapterName) {
       if (chapterName === activeChapterName) return;
       map.flyTo(chapters[chapterName]);
-      document.getElementById(chapterName).setAttribute('class', 'active');
-      document.getElementById(activeChapterName).setAttribute('class', '');
+
+      const c = document.getElementById(chapterName);
+      if (c) {
+        c.setAttribute('class', 'active');
+      }
+      const d = document.getElementById(activeChapterName);
+      if (d) { d.setAttribute('class', ''); }
       activeChapterName = chapterName;
+      if (activeChapterName !== "stateofplay") {
+        toggleLayers()// remove layers
+        pulsationMarkersVisibility(false); // remove pulsation
+      }
     }
+
+
     function isElementOnScreen(id) {
       var element = document.getElementById(id);
       var bounds = element.getBoundingClientRect();
