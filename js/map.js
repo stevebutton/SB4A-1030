@@ -340,16 +340,19 @@ map.on('load', () => {
 })
 
 document.addEventListener("click", (e) => { // hide popup on mouse click 
-    if (e.target.className === "pdf_link") {
+
+    const classClick = e.target.className;
+
+    console.log('classClick', classClick);
+
+    if (classClick === "pdf_link") {
         //open pdf doc
         console.log('open pdf modal', e, e.target);
-        openPDF(e.target.getAttribute("href"))
+        //openPDF(e.target.getAttribute("href"))
+        openModal(generatePdf(e.target.getAttribute("href")))
         disableWindowScroll()
     }
-    if (e.target.className === "close_pdf") {
-        //open pdf doc
-        const pdf = document.querySelector("#pdf");
-        pdf.style.display = 'none';
+    if (classClick.includes("close_pdf") || classClick.includes("close-modal")) {
         enableWindowScroll()
     }
 })
@@ -360,6 +363,35 @@ document.addEventListener("click", (e) => { // hide popup on mouse click
         hideToolsMarkersInfoDiv()
     }
 })
+
+
+
+
+function generatePdf(url) {
+    const link = url;
+    const pdfDiv = `<div>
+            <object data="${link}" type="application/pdf" style="width:100%;height:80vh">
+                alt : <a href="${link}">test.pdf</a>
+            </object>
+        </div>`;
+    return pdfDiv
+}
+
+
+function openModal(content) {
+    $(".modal-window .hide-me-overlay").css("display", "block");
+    $(".modal-window .hide-me-overlay").fadeTo(500, 1);
+    $(".modal-window .w-embed").html(content)
+}
+function closeModal() {
+    $(".modal-window .hide-me-overlay").css("display", "none");
+    $(".modal-window .hide-me-overlay").css("opacity", "0");
+    $(".modal-window .w-embed").html("")
+}
+$(document).on('click', '.close-modal', function () {
+    //close modal event
+});
+
 
 
 function openPDF(url) {
