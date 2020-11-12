@@ -342,7 +342,6 @@ map.on('load', () => {
 document.addEventListener("click", (e) => { // hide popup on mouse click 
 
     const classClick = e.target.className;
-
     console.log('classClick', classClick);
 
     if (classClick === "pdf_link") {
@@ -363,9 +362,6 @@ document.addEventListener("click", (e) => { // hide popup on mouse click
         hideToolsMarkersInfoDiv()
     }
 })
-
-
-
 
 function generatePdf(url) {
     const link = url;
@@ -395,10 +391,8 @@ $(document).on('click', '.close-modal', function () {
 
 
 function openPDF(url) {
-
     const pdf = document.querySelector("#pdf");
     pdf.style.display = 'inline';
-
     const link = url;
     console.log('link', link);
     const pdfDiv = `<div>
@@ -417,7 +411,6 @@ function openPDF(url) {
 
 }
 
-
 var toggleToolsMarkersVisibility = (function () {
     var visible = true;
     return function () {
@@ -426,9 +419,6 @@ var toggleToolsMarkersVisibility = (function () {
         return visible
     }
 })();
-
-
-
 
 
 function toolsMarkersVisibility(visible) {
