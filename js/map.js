@@ -24,7 +24,7 @@ $(document).on("click", "#missionreports", function () {
 
 
 $(document).on("click", "#show_ranking_layer", function () {
-    toggleLayers('sop-sb4a-quality')
+    toggleLayers(['sop-sb4a-quality', 'sop-sb4a-eud', 'sop-sb4a'])
     pulsationMarkersVisibility(false);
     map.flyTo({
         bearing: -0.03,
@@ -53,32 +53,41 @@ $(document).on("click", "#show_sop_layer", function () {
     pulsationMarkersVisibility(false);
     checkSliderIndex();
     map.flyTo({
-        bearing: -0.03,
+        bearing: 9.60,
         duration: 5000,
-        center: [15.63593, -2.02996],
-        zoom: 2.36,
-        pitch: 45
+        center: { lon: 15.72016, lat: -0.47003 },
+        zoom: 2.40,
+        pitch: 14
     });
 });
 
 function checkSliderIndex() {
     const index = $("#SOP_slider").find(".w-slider-dot.w-active").index();
     if (index >= 1) {
-        toggleLayers('sop-sb4a-eud')
+        toggleLayers(['sop-sb4a-eud', 'sop-sb4a'])
     } else {
-        toggleLayers('sop-sb4a')
+        toggleLayers(['sop-sb4a'])
+    }
+    if (index === 1) {
+        map.flyTo({
+            bearing: 0,
+            duration: 5000,
+            center: { lon: 22.17730, lat: -5.27871 },
+            zoom: 2.49,
+            pitch: 42.50
+        });
     }
 }
-
 function toggleLayers(layerName) { //show, hide, hide all layers without props
     const layers = [
         'sop-sb4a-quality',
         'sop-sb4a-eud',
         'sop-sb4a'
     ]
+    const onLayers = layers
+        .filter(value => layerName && layerName.includes(value)) //find intersection between two arrays 
     layers.forEach(i => {
-        const v = (layerName && layerName === i) ? 'visible' : 'none';
-        //map.setPaintProperty(i, 'fill-opacity', v);
+        const v = (onLayers.includes(i)) ? 'visible' : 'none';
         console.log(`map.setLayoutProperty(${i}, 'visibility', ${v})`);
         map.setLayoutProperty(i, 'visibility', v);
     })

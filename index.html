@@ -1474,11 +1474,11 @@
                 <img src="images/SoPNew1.png" loading="lazy" alt="" id="show_pulsation_markers" class="imgsop1">
               </a>
               <a data-w-tab="SoPB" id="SoPmap" data-w-id="e207b50b-7759-69f0-ec94-10680d8ed5bc"
-                class="sopmap w-inline-block w-tab-link w--current"><img src="images/SoPKey-Takeaways.png"
-                  loading="lazy" alt="" class="imgsop2"></a>
+                class="sopmap w-inline-block w-tab-link w--current">
+                <img src="images/SoPKey-Takeaways.png" id="show_sop_layer" loading="lazy" alt="" class="imgsop2"></a>
               <a data-w-tab="SoPC" data-w-id="e207b50b-7759-69f0-ec94-10680d8ed5be"
-                class="tablink-sop3 w-inline-block w-tab-link"><img src="images/SoPRanking-PPD.png" loading="lazy"
-                  alt="" class="imgsop3"></a>
+                class="tablink-sop3 w-inline-block w-tab-link">
+                <img src="images/SoPRanking-PPD.png" loading="lazy" id="show_ranking_layer" alt="" class="imgsop3"></a>
               <a data-w-tab="SoPintro" class="tab-link-sopintro w-inline-block w-tab-link"></a>
             </div>
             <div class="tabs-content w-tab-content">
@@ -1821,6 +1821,7 @@
         toggleLayers()// remove layers
         pulsationMarkersVisibility(false); // remove pulsation
         //map.setLayoutProperty("africa", 'visibility', 'none');
+        map.setLayoutProperty('africa', 'visibility', 'none');
       }
 
       console.log('chapterName!!!',chapterName);
