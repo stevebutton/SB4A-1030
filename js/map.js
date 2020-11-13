@@ -77,8 +77,10 @@ function toggleLayers(layerName) { //show, hide, hide all layers without props
         'sop-sb4a'
     ]
     layers.forEach(i => {
-        const v = (layerName && layerName === i) ? 1 : 0;
-        map.setPaintProperty(i, 'fill-opacity', v);
+        const v = (layerName && layerName === i) ? 'visible' : 'none';
+        //map.setPaintProperty(i, 'fill-opacity', v);
+        console.log(`map.setLayoutProperty(${i}, 'visibility', ${v})`);
+        map.setLayoutProperty(i, 'visibility', v);
     })
 }
 
