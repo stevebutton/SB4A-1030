@@ -248,17 +248,17 @@ map.on('load', () => {
                 //popupDiv.style.display = "initial";
                 legend.innerHTML =
                     `
-                    <h1 style="text-align: center;color:black">${d.Name}</h1>
+                    <h1 style="font-family: Oswald, sans-serif;text-align: center;color:black;padding-top:0px;margin-top:0px;">${d.Name}</h1>
                   
                     <div>
                         
-                        <div style="text-align: center;  float:left;width:20px;cursor:pointer;margin-top: 200px">
+                        <div style="text-align: center;  float:left;width:30px;cursor:pointer;margin-top: 200px">
                             <div id="prev_info"><i class="left arrow"></i></div>
                         </div>
 
                         <div class="radarChart" style="text-align: center;  float:left;width:350px"></div>
 
-                        <div style="height:300px;overflow-y: overlay;   float:left;width:300px;margin-left:10px">
+                        <div style="height:410px;overflow-y: overlay;   float:left;width:300px;margin-left:10px">
                             <div >
                                 ${d.Description}
                             </div>
@@ -284,7 +284,7 @@ map.on('load', () => {
                             </div>
                         </div>
 
-                        <div class="radarChart" style="text-align: center;  float:left;width:20px;cursor:pointer;margin-top: 200px">
+                        <div class="radarChart" style="text-align: center;  float:left;width:30px;cursor:pointer;margin-top: 200px">
                             <div id="prev_info"><i class="right arrow"></i></div>
                         </div>
 
@@ -477,7 +477,7 @@ function buildChart(data) {
     //////////////////////// Set-Up ////////////////////////////// 
     ////////////////////////////////////////////////////////////// 
 
-    var margin = { top: 30, right: 55, bottom: 30, left: 55 },
+    var margin = { top: 30, right: 65, bottom: 30, left: 65 },
         width = Math.min(350, window.innerWidth - 10) - margin.left - margin.right,
         height = Math.min(350, window.innerHeight - margin.top - margin.bottom - 20);
 
