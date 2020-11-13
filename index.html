@@ -326,8 +326,7 @@
                             <h4 class="media_card_title">Structured Dialogue<br>in Uganda</h4><img
                               src="images/bake-image.png" loading="lazy" alt="" class="image-10">
                             <p class="bake72__summary">Description max two lines: PPD in practice with Uganda</p>
-                            <div id="sym-link" videourl="vid/Uganda-interview+maps.mp4"
-                               style="width:225PX;height:6PX"
+                            <div id="sym-link" videourl="vid/Uganda-interview+maps.mp4" style="width:225PX;height:6PX"
                               class="bake72__button view-video">
                               <div class="bake72__button__text">watch the video</div>
                             </div>
@@ -1503,8 +1502,8 @@
               </div>
               <div data-w-tab="SoPB" class="w-tab-pane w--tab-active">
                 <div class="ss-wrapper">
-                  <div data-animation="cross" id="SOP_slider" data-hide-arrows="1" data-nav-spacing="10" data-duration="500"
-                    data-infinite="1" class="slider w-slider">
+                  <div data-animation="cross" id="SOP_slider" data-hide-arrows="1" data-nav-spacing="10"
+                    data-duration="500" data-infinite="1" class="slider w-slider">
                     <div class="mask w-slider-mask">
                       <div class="w-slide">
                         <div class="card-nov">
@@ -1766,7 +1765,8 @@
         duration: 5000,
         center: [18.79277, 9.78503],
         zoom: 2.4,
-        pitch: 0
+        pitch: 0,
+        showLayer: ['africa']
       },
       'library': {
         duration: 5000,
@@ -1816,10 +1816,21 @@
       const d = document.getElementById(activeChapterName);
       if (d) { d.setAttribute('class', ''); }
       activeChapterName = chapterName;
+
       if (activeChapterName !== "stateofplay") {
         toggleLayers()// remove layers
         pulsationMarkersVisibility(false); // remove pulsation
+        //map.setLayoutProperty("africa", 'visibility', 'none');
       }
+
+      console.log('chapterName!!!',chapterName);
+      if (chapters[chapterName].showLayer ) {
+        chapters[chapterName].showLayer.forEach(layer => {
+          map.setLayoutProperty(layer, 'visibility', 'visible');
+        });
+      }
+
+
     }
 
 
