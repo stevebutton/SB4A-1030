@@ -259,17 +259,26 @@ map.on('load', () => {
                 //popupDiv.style.display = "initial";
                 legend.innerHTML =
                     `
-                    <h1 style="font-family: Oswald, sans-serif;text-align: center;color:black;padding-top:0px;margin-top:0px;">${d.Name}</h1>
-                  
+                   
                     <div>
-                        
-                        <div style="text-align: center;  float:left;width:30px;cursor:pointer;margin-top: 200px">
-                            <div id="prev_info"><i class="left arrow"></i></div>
+                        <div style="text-align: center;  float:left;width:350px">
+
+                            <div style="display:flex;justify-content: center;">
+                                <div style="text-align: center;  width:30px;cursor:pointer;margin-top: 16px;">
+                                    <div id="prev_info"><i class="left arrow"></i></div>
+                                </div>
+                                <div style="text-align: center;  ">
+                                        <h1 style="font-family: Oswald, sans-serif;text-align: center;color:black;padding-top:0px;margin-top:0px;">${d.Name}</h1>
+                                </div>
+                                <div style="text-align: center; width:30px;cursor:pointer;margin-top: 16px;">
+                                    <div id="prev_info"><i class="right arrow"></i></div>
+                                </div>
+                                <div style="clear:both"></div>
+                            </div>
+                            <div class="radarChart"></div>
+
                         </div>
-
-                        <div class="radarChart" style="text-align: center;  float:left;width:350px"></div>
-
-                        <div style="height:410px;overflow-y: overlay;   float:left;width:300px;margin-left:10px">
+                        <div style="height:410px;overflow-y: overlay;   float:left;width:300px;margin-left:10px;margin-top:49px">
                             <div >
                                 ${d.Description}
                             </div>
@@ -294,11 +303,6 @@ map.on('load', () => {
                                 <p>${d.Threats}</p>
                             </div>
                         </div>
-
-                        <div class="radarChart" style="text-align: center;  float:left;width:30px;cursor:pointer;margin-top: 200px">
-                            <div id="prev_info"><i class="right arrow"></i></div>
-                        </div>
-
                         <div style="clear:both"></div>
                     </div>
                    
