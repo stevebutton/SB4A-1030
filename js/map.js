@@ -24,7 +24,8 @@ $(document).on("click", "#missionreports", function () {
 
 
 $(document).on("click", "#show_ranking_layer", function () {
-    toggleLayers(['sop-sb4a-quality', 'sop-sb4a-eud', 'sop-sb4a'])
+    // toggleLayers(['sop-sb4a-quality', 'sop-sb4a-eud', 'sop-sb4a'])
+    toggleLayers(['sop-sb4a-quality'])
     pulsationMarkersVisibility(false);
     map.flyTo({
         bearing: -0.03,
